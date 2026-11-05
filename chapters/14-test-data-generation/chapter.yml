@@ -1,0 +1,52 @@
+title: Automatische Testdatengenerierung
+summary: Eigene Generatoren schreiben und verstehen, wie QuickCheck funktioniert.
+intro: intro.typ
+defaults:
+  scratch: haskell
+items:
+  - id: such-that
+    title: suchThat
+    level: 2
+    code:
+      language: haskell
+  - id: positive-modifier
+    title: Der Modifier Positive
+    level: 2
+    after: [such-that]
+    code:
+      language: haskell
+  - id: quickcheck-simple
+    title: Funktionen mit variabler Argumentanzahl am Beispiel quickCheck
+    kind: challenge
+    level: 3
+    long: true
+    tags: [deep-dive]
+    code:
+      file: code/SimpleQuickCheck.hs
+      check: code/SimpleQuickCheckCheck.hs
+  - id: quickcheck-prng
+    title: Zufällige Parameter in QuickCheck
+    kind: challenge
+    level: 3
+    long: true
+    tags: [deep-dive]
+    after: [quickcheck-simple]
+    code:
+      file: code/PrngQuickCheck.hs
+      check: code/PrngQuickCheckCheck.hs
+
+  - checklist: selbstevaluation-testdaten
+    text: selfeval.typ
+
+  - section: Reguläre Ausdrücke und Automaten
+
+  - id: regexp-arbitrary
+    title: Zufällige reguläre Ausdrücke
+    level: 2
+    long: true
+    start-here: true
+    similar: [regexp-type]
+    code:
+      file: code/RegExpGen.hs
+      check: code/RegExpGenCheck.hs
+      support: [../02-types/code/RegExp.hs]

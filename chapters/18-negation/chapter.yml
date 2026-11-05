@@ -1,0 +1,26 @@
+title: Negation
+summary: Negation als Fehlschlag und ihre Fallstricke.
+intro: intro.typ
+defaults:
+  scratch: prolog
+items:
+  - id: naf
+    title: Negation als Fehlschlag
+  - id: naf-provable
+    title: Wann ist \+ p beweisbar?
+  - id: naf-vs-logic
+    title: Negation in der Logik
+    level: 2
+  - id: naf-free-vars
+    title: Freie Variablen in der Negation
+    start-here: true
+  - id: rule-quantifiers
+    title: Quantoren in Regeln
+  - id: forall
+    title: forall definieren
+    after: [not-member-bug]
+    code:
+      language: prolog
+
+  - checklist: selbstevaluation-negation
+    text: selfeval.typ

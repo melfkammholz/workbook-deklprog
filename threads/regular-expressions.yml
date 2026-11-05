@@ -1,0 +1,17 @@
+title: Reguläre Ausdrücke und Automaten
+description: Das Wortproblem in Haskell, begleitend zum Modul Berechnungen und Logik.
+page: regular-expressions.typ
+finale: regexp-parser
+files:
+  - code/FA.hs
+support: [../chapters/02-types/code/RegExp.hs]
+steps:
+  - regexp-type
+  - brzozowski
+  - automata-trees
+  - thompson
+  - epsilon-elimination
+  - powerset-construction
+  - state-elimination
+  - regexp-arbitrary
+  - regexp-parser

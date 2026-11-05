@@ -1,0 +1,55 @@
+title: Ein- und Ausgabe
+summary: Seiteneffekte beschreiben, ohne die Reinheit aufzugeben.
+intro: intro.typ
+defaults:
+  scratch: haskell
+items:
+  - section: Grundlagen
+
+  - id: referential-transparency
+    title: Referenzielle Transparenz
+  - id: io-type
+    title: Der Typ IO a
+  - id: io-combine
+    title: IO-Aktionen kombinieren
+  - id: io-sequencing
+    title: Die Reihenfolge von IO-Aktionen
+    level: 3
+    tags: [level-up]
+
+  - section: IO-Programme
+
+  - id: read-int
+    title: Eine Zahl einlesen
+    start-here: true
+    code:
+      language: haskell
+  - id: sum-file
+    title: Zahlen aus einer Datei
+    level: 1
+    code:
+      language: haskell
+  - id: liebe-harry
+    title: Liebe Harry
+    code:
+      language: haskell
+  - id: dyck
+    title: Dyck-Wörter
+    level: 2
+    code:
+      language: haskell
+  - id: dirty-dan
+    title: Der dreckige Dan
+    level: 2
+    code:
+      language: haskell
+  - id: guessing-game
+    title: Ein Rate-Spiel
+    level: 2
+    long: true
+    start-here: true
+    code:
+      language: haskell
+
+  - checklist: selbstevaluation-ein-ausgabe
+    text: selfeval.typ

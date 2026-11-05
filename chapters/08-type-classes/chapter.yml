@@ -1,0 +1,168 @@
+title: Typklassen und Überladung
+summary: Ad-hoc Polymorphismus und eigene Instanzen.
+intro: intro.typ
+defaults:
+  scratch: haskell
+items:
+  - section: Grundlagen
+
+  - id: typeclass-what
+    title: Was sind Typklassen?
+  - id: adhoc-vs-parametric
+    title: Zwei Arten von Polymorphismus
+  - id: show-rescued
+    title: Die Rettung von show
+    after: [show-type]
+  - id: typeclasses-known
+    title: Welche Typklassen kennst du?
+    start-here: true
+  - id: read-class
+    title: Werte aus Strings parsen
+  - id: hash-typeclass
+    title: Eine Hash-Funktion
+  - id: numeric-literals
+    title: Zahlenliterale
+  - id: case-vs-if
+    title: case oder if?
+  - id: popcnt-bits
+    title: Das Hamming-Gewicht
+    after: [imperative-variables]
+  - id: typeclasses-other-languages
+    title: Typklassen in anderen Sprachen
+  - id: most-general-types
+    title: Allgemeinste Typen
+    level: 2
+
+  - page: generalize-types
+    title: Typen verallgemeinern
+
+  - section: Instanzen
+
+  - id: eq-laws
+    title: Die Typklasse Eq
+  - id: eq-instance
+    title: Eine Eq-Instanz
+    level: 2
+    long: true
+    start-here: true
+    code:
+      language: haskell
+  - id: ord-laws
+    title: Die Typklasse Ord
+    level: 2
+  - id: ord-instance
+    title: Eine Ord-Instanz
+    level: 2
+    long: true
+    start-here: true
+    after: [eq-instance]
+    code:
+      language: haskell
+  - id: ord-defaults
+    title: Standarddefinitionen in Ord
+    level: 3
+    long: true
+  - id: show-tree-runtime
+    title: Die Laufzeit von show
+    level: 2
+  - id: if-then-else-class
+    title: ifThenElse für alle Typen
+    level: 2
+    long: true
+    code:
+      language: haskell
+  - id: semigroup-monoid
+    title: Halbgruppen und Monoide
+    level: 2
+    long: true
+    code:
+      language: haskell
+
+  - section: Größere Aufgaben
+
+  - id: huffman
+    title: Komprimierung mit Huffman-Kodierung
+    kind: challenge
+    level: 2
+    long: true
+    tags: [deep-dive]
+    code:
+      file: code/Huffman.hs
+      check: code/HuffmanCheck.hs
+
+  - checklist: selbstevaluation-typklassen-instanzen
+    text: selfeval.typ
+
+  - section: Differenzieren
+
+  - id: automatic-differentiation
+    title: Automatisches Differenzieren
+    kind: challenge
+    level: 2
+    long: true
+    tags: [deep-dive, diff]
+    after: [symbolic-differentiation]
+    code:
+      file: code/AutomaticDifferentiation.hs
+      check: code/AutomaticDifferentiationCheck.hs
+
+  - section: Lineare Gleichungssysteme
+
+  - id: mat22
+    title: Rechnen mit 2×2-Matrizen
+    code:
+      file: code/Mat22.hs
+      check: code/Mat22Check.hs
+  - id: log-fib
+    title: Die n-te Fibonacci-Zahl in logarithmischer Zeit
+    after: [binary-exponentiation, mat22]
+    code:
+      file: code/LogFib.hs
+      check: code/LogFibCheck.hs
+  - id: tropical
+    title: Kürzeste Wege mit tropischen Zahlen
+    kind: challenge
+    level: 3
+    long: true
+    tags: [deep-dive]
+    after: [block-matrices]
+    code:
+      shared: linear-systems
+      check: code/TropicalCheck.hs
+  - id: lr-decomposition
+    title: LR-Zerlegung
+    kind: challenge
+    level: 3
+    tags: [deep-dive]
+    after: [block-matrices, tropical]
+    code:
+      shared: linear-systems
+      check: code/LrCheck.hs
+
+  - section: Polynome und Eigenwerte
+
+  - id: polynomial-roots
+    title: Nullstellen ganzzahliger Polynome
+    kind: challenge
+    level: 2
+    tags: [deep-dive]
+    code:
+      shared: polynomials
+      check: code/PolynomialCheck.hs
+  - id: eigenvalues
+    title: Eigenwerte unimodularer Matrizen
+    kind: challenge
+    level: 3
+    tags: [deep-dive]
+    after: [tropical, polynomial-roots]
+    code:
+      shared: polynomials
+      check: code/EigenCheck.hs
+
+  - section: Vertiefung
+
+  - page: autodiff-any-derivative
+    title: Ableitungen beliebiger Ordnung
+
+  - page: tropical-num-laws
+    title: Num-Gesetze und Halbringe

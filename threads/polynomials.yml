@@ -1,0 +1,10 @@
+title: Polynome und Eigenwerte
+description: Von ganzzahligen Polynomen über unimodulare Matrizen bis zu Eigenwerten.
+page: polynomials.typ
+finale: eigenvalues
+files:
+  - code/Polynomial.hs
+  - code/Eigen.hs
+steps:
+  - polynomial-roots
+  - eigenvalues

@@ -1,0 +1,8 @@
+title: Differenzieren
+description: Symbolisch und automatisch ableiten, bis zum Gradientenverfahren.
+page: differentiation.typ
+finale: gradient-descent
+steps:
+  - symbolic-differentiation
+  - automatic-differentiation
+  - gradient-descent

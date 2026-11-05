@@ -1,0 +1,168 @@
+title: Rechnen in der Logikprogrammierung
+summary: Unifikation, SLD-Resolution und wie Prolog Anfragen beweist.
+intro: intro.typ
+defaults:
+  scratch: prolog
+items:
+  - section: Terme und Substitutionen
+
+  - id: modus-ponens
+    title: Modus ponens
+  - id: resolution-simple
+    title: Das einfache Resolutionsprinzip
+  - id: resolution-provable
+    title: Beweisbarkeit
+  - id: terms-definition
+    title: Wie sind Terme definiert?
+  - id: terms-syntax
+    title: Syntaktisch korrekte Terme
+  - id: substitution-method
+    title: Variablen ersetzen
+  - id: substitution-definition
+    title: Die Substitution auf Termen
+  - id: substitution-apply
+    title: Substitutionen anwenden
+  - id: substitution-welldefined
+    title: Wohldefinierte Substitutionen
+  - id: substitution-stepwise
+    title: Schritt für Schritt substituieren
+  - id: substitution-not-equal
+    title: Zwei verschiedene Substitutionen
+  - id: substitution-in-sat
+    title: Substitution im SAT-Löser
+  - id: composition-results
+    title: Kompositionen berechnen
+  - id: composition-not-commutative
+    title: Die Reihenfolge der Komposition
+  - id: composition-overwrite
+    title: Komposition mit gleicher Variable
+  - id: composition-not-union
+    title: Komposition und Vereinigung
+  - id: composition-conditions
+    title: Die Bedingungen der Komposition
+    level: 2
+
+  - section: Unifikation
+
+  - id: literal-match
+    title: Wann passt ein Literal?
+  - id: unifiable-definition
+    title: Unifizierbarkeit
+  - id: unifier-mgu
+    title: Unifikatoren und allgemeinste Unifikatoren
+  - id: mgu-exists
+    title: Wann gibt es einen allgemeinsten Unifikator?
+  - id: disagreement-set
+    title: Die Unstimmigkeitsmenge
+  - id: disagreement-check
+    title: Unstimmigkeitsmengen prüfen
+  - id: ds-check-g
+    title: Eine verdächtige Unstimmigkeitsmenge
+  - id: unify-list-lengths
+    title: Listen verschiedener Länge
+  - id: find-mgus
+    title: Allgemeinste Unifikatoren finden
+    start-here: true
+  - page: unification-mistakes
+    title: Häufige Fehler bei der Unifikation
+  - id: substitution-idempotent
+    title: Eine Substitution zweimal anwenden
+  - id: check-unifier
+    title: Einen Unifikator prüfen
+  - id: mgu-property
+    title: Warum allgemeinst?
+  - id: ds-empty
+    title: Eine leere Unstimmigkeitsmenge
+  - id: unification-terminates
+    title: Terminierung der Unifikation
+  - id: unification-failures
+    title: Fehlschläge der Unifikation
+  - id: occurs-naive
+    title: Naiv weiterrechnen
+  - id: occurs-check
+    title: Der Vorkommenstest
+  - id: substitution-on-terms
+    title: Substitutionen auf Termen
+    level: 2
+  - id: unification-course
+    title: Ein Verlauf des Algorithmus
+    level: 2
+  - id: exponential-example
+    title: Exponentielle Laufzeit
+    level: 2
+  - id: exponential-why
+    title: Woher die exponentielle Laufzeit kommt
+    level: 2
+    after: [exponential-example]
+
+  - section: SLD-Resolution
+
+  - id: sld-components
+    title: Das allgemeine Resolutionsprinzip
+  - id: selection-function
+    title: Die Selektionsfunktion
+  - id: sld-step
+    title: Ein Resolutionsschritt
+  - id: rename-variables
+    title: Variablen umbenennen
+    level: 2
+  - id: rename-essential
+    title: Ein essentieller Schritt
+  - id: sld-structure
+    title: Die Struktur eines SLD-Baums
+  - page: sld-trees
+    title: SLD-Bäume
+  - id: sld-tree-simple
+    title: Ein erster SLD-Baum
+    start-here: true
+  - id: sld-tree-recursive
+    title: Ein SLD-Baum mit Rekursion
+    level: 2
+    start-here: true
+    after: [sld-tree-simple]
+  - id: sld-tree-cut
+    title: Ein SLD-Baum mit Cut
+    level: 2
+    after: [sld-tree-simple]
+    similar: [cut-sld]
+  - page: sld-exams
+    title: Weitere SLD-Aufgaben
+  - id: append-unifier
+    title: Ein Schritt von append
+  - id: upto-graph
+    title: Lösungen schneller berechnen
+    level: 2
+  - id: nth-trace
+    title: Was ist schief gelaufen?
+    level: 2
+  - id: occurs-sld
+    title: Unifikation im SLD-Baum
+    level: 2
+  - id: sld-graphviz
+    title: SLD-Bäume generieren
+    kind: challenge
+    level: 2
+    tags: [deep-dive]
+
+  - section: Auswertung in Prolog
+
+  - id: complete-strategy
+    title: Eine vollständige Strategie
+  - id: dfs-preferred
+    title: Warum Tiefensuche?
+  - id: child-order
+    title: Die Reihenfolge der Kinder
+  - id: backtracking-role
+    title: Die Rolle von Backtracking
+  - id: binding-variables
+    title: Variablen binden
+  - id: clause-order
+    title: Spezialfälle zuerst
+  - id: fruit-salad
+    title: Obstsalat
+    level: 1
+  - id: prolog-lists
+    title: Listen in Prolog
+
+  - checklist: selbstevaluation-rechnen
+    text: selfeval.typ

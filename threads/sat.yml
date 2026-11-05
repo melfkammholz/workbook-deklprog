@@ -1,0 +1,8 @@
+title: Ein SAT-Löser
+description: Erfüllbarkeit aussagenlogischer Formeln, erst einfach, dann mit Implikation und Äquivalenz.
+language: prolog
+files:
+  - code/Sat.pl
+steps:
+  - sat-solver
+  - desugar

@@ -1,0 +1,66 @@
+title: Ausdrücke und einfache Funktionen
+summary: Ausdrücke, Funktionen, Rekursion - die elementaren Bausteine funktionaler Programme.
+intro: intro.typ
+defaults:
+  scratch: haskell
+items:
+  # - page: vorwort
+  #   title: Vorwort
+
+  # - section: Ausdrücke und einfache Funktionen
+
+  - id: expressions-everything
+    title: "\"Everything is an expression.\""
+  - id: side-effects
+    title: Seiteneffektfrei
+    start-here: true
+  - id: strong-typing
+    title: Streng getypte Programmiersprachen
+  - id: loops
+    title: Schleifen in Haskell?
+    start-here: true
+  - id: conditionals
+    title: Bedingte Ausdrücke
+  - id: typing-pros-cons
+    title: Pros & Cons von streng getypten Programmiersprachen
+  - id: imperative-variables
+    title: Imperative Variablen in Haskell?
+    start-here: true
+  - id: slot-machine
+    title: Einarmiger Bandit
+    level: 2
+    start-here: true
+    code:
+      language: haskell
+    after: [imperative-variables]
+
+  # - section: Rekursion
+
+  - id: recursion-care
+    title: Nie wieder stack overflows!
+    tags: [rekursion]
+    start-here: true
+  - id: mutual-recursion
+    tags: [rekursion]
+    title: Gegenseitige Rekursion
+    after: [recursion-care]
+  - id: local-definitions
+    title: Lokale Definitionen
+  - id: binary-exponentiation
+    tags: [rekursion]
+    title: Binäre Exponentiation
+    start-here: true
+    after: [recursion-care]
+    code:
+      file: code/BinaryExponentiation.hs
+      check: code/BinaryExponentiationCheck.hs
+  - id: let-evaluation
+    title: Laziness in let
+  - id: if-typecheck
+    title: Typen in bedingten Ausdrücken
+  - id: no-result
+    title: Die partielleste Funktion
+    code:
+      language: haskell
+  - checklist: selbstevaluation-typklassen
+    text: selfeval.typ

@@ -1,0 +1,32 @@
+title: Der Cut-Operator
+summary: Backtracking gezielt einschränken.
+intro: intro.typ
+defaults:
+  scratch: prolog
+items:
+  - id: cut-purpose
+    title: Wofür der Cut?
+  - id: cut-provable
+    title: Beweisbarkeit mit Cut
+  - id: cut-programs
+    title: Ausgaben mit Cut
+    start-here: true
+  - id: cut-if-then-else
+    title: Fallunterscheidung
+  - id: cut-negation
+    title: Negation mit Cut
+    level: 2
+    code:
+      language: prolog
+  - id: cut-sld
+    title: Der Cut im SLD-Baum
+    similar: [sld-tree-cut]
+  - id: cut-max
+    title: Berechnungen sparen
+    code:
+      language: prolog
+  - id: cut-member
+    title: member mit Cut
+
+  - checklist: selbstevaluation-cut
+    text: selfeval.typ

@@ -1,0 +1,58 @@
+title: Abstrakte Datentypen
+summary: Schnittstellen und ihre Gesetze, unabhängig von der Implementierung.
+intro: intro.typ
+defaults:
+  scratch: haskell
+items:
+  - section: Grundlagen
+
+  - id: adt-what-is
+    title: Was ist ein abstrakter Datentyp?
+  - id: adt-semantics
+    title: Die Semantik eines ADTs
+  - id: adt-constructors
+    title: Konstruktoren im ADT
+  - id: adt-encapsulation
+    title: Datenkapselung in Haskell
+  - id: adt-equality
+    title: Gleichheit auf einem ADT
+
+  - section: Gesetze
+
+  - id: adt-law-values
+    title: Werte in Gesetzen
+    level: 1
+  - id: adt-law-properties
+    title: Eigenschaften von Gesetzen
+  - id: adt-preconditions
+    title: Bedingungen in Gesetzen
+  - id: array-reverse-law
+    title: Ein Gesetz für reverse
+    level: 2
+  - id: array-update-law
+    title: Ein Gesetz für update
+    level: 2
+  - id: set-size-law
+    title: Ein falsches Gesetz für Mengen
+    level: 2
+
+  - section: ADTs angeben
+
+  - id: pomodoro-timer
+    title: Pomodoro-Timer
+    level: 2
+    start-here: true
+  - id: adt-collection
+    title: Eine Sammlung von ADTs
+    kind: challenge
+    level: 2
+    long: true
+    code:
+      language: haskell
+  - id: queue-adt-critique
+    title: Ein ADT voller Fehler
+    level: 2
+    long: true
+
+  - checklist: selbstevaluation-adt
+    text: selfeval.typ

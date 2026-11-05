@@ -1,0 +1,279 @@
+title: Funktoren, Applicatives und Monaden
+summary: Berechnungen im Kontext abstrahieren und sequenzieren.
+intro: intro.typ
+defaults:
+  scratch: haskell
+items:
+  - section: Funktoren
+
+  - id: type-constructor-classes
+    title: Typkonstruktorklassen
+  - id: tcc-instances
+    title: Instanzen einer Typkonstruktorklasse
+  - id: functor-laws
+    title: Die Functor-Gesetze
+    start-here: true
+  - id: functor-kind
+    title: Der Kind von f
+  - id: functor-instances
+    title: Functor-Instanzen
+    start-here: true
+  - id: invalid-functors
+    title: Ungültige Functor-Instanzen
+  - id: functor-law-proofs
+    title: Die Functor-Gesetze zeigen
+  - id: bifunctor
+    title: Bifunktoren
+    level: 2
+    code:
+      language: haskell
+
+  - section: Applicatives
+
+  - id: applicative-laws
+    title: Die Applicative-Gesetze
+  - id: applicative-instances
+    title: Applicative-Instanzen
+  - id: applicative-fmap
+    title: "fmap und (<*>)"
+    level: 2
+  - id: zip-list
+    title: ZipList
+    kind: challenge
+    level: 2
+    long: true
+    tags: [level-up]
+    code:
+      language: haskell
+
+  - section: Monaden
+
+  - id: monad-laws
+    title: Die Monad-Gesetze
+    start-here: true
+  - id: monad-instances
+    title: Monad-Instanzen
+    start-here: true
+  - id: general-type-join
+    title: "Der Typ von mmx >>= id"
+  - id: monad-effects
+    title: Welche Monade für welchen Effekt?
+  - id: monad-sequencing
+    title: Sequenzierung in Maybe und Listen
+  - id: bind-vs-fmap
+    title: "(>>=) und fmap"
+  - id: monad-from-bind
+    title: "Alles aus (>>=)"
+    level: 2
+    code:
+      language: haskell
+  - id: kleisli
+    title: Monadische Funktionen komponieren
+    level: 2
+    code:
+      language: haskell
+  - id: fiction-fix
+    title: Fehler in Instanzen finden
+    level: 2
+  - id: identity-instances
+    title: Die Identity-Monade
+    level: 1
+    code:
+      language: haskell
+  - id: non-empty-instances
+    title: Instanzen für NonEmpty
+    level: 2
+    code:
+      language: haskell
+  - id: reader
+    title: Die Reader-Monade
+    level: 2
+    start-here: true
+  - id: list-writer
+    title: Die ListWriter-Monade
+    level: 2
+    tags: [level-up]
+    after: [reader]
+    code:
+      language: haskell
+  - id: monadic-functions
+    title: Programmieren mit beliebigen Monaden
+    level: 2
+    long: true
+    tags: [level-up]
+    code:
+      language: haskell
+
+  - section: Fehlschläge
+
+  - id: guard-monadzero
+    title: guard
+    level: 2
+    tags: [level-up]
+    code:
+      language: haskell
+  - id: alternative-zero
+    title: guard für Applicatives
+    level: 2
+    after: [guard-monadzero]
+    code:
+      language: haskell
+  - id: safe-div-applicative
+    title: "Sichere Division ohne (>>=)"
+    after: [guard-monadzero]
+    code:
+      language: haskell
+  - id: eval-errors
+    title: Fehlerbehandlung mit Monaden
+    level: 3
+    long: true
+    tags: [level-up]
+    after: [guard-monadzero]
+    code:
+      file: code/EvalErrors.hs
+      check: code/EvalErrorsCheck.hs
+  - id: list-monad-lc
+    title: Listenmonade und list comprehensions
+    level: 2
+    after: [guard-monadzero]
+
+  - section: do-Notation
+
+  - id: do-to-bind
+    title: "Von do zu (>>=)"
+    start-here: true
+  - id: bind-to-do
+    title: "Von (>>=) zu do"
+  - id: do-return
+    title: Was macht return?
+  - id: do-if-error
+    title: Ein Fehler in einem do
+  - id: do-patterns
+    title: Muster in der do-Notation
+    level: 2
+    long: true
+    after: [eval-errors]
+
+  - section: Monaden anwenden
+
+  - id: all-trees
+    title: Alle Bäume
+    level: 2
+    long: true
+    code:
+      file: code/AllTrees.hs
+      check: code/AllTreesCheck.hs
+  - id: fold-deep
+    title: Falten mit fmap
+    level: 2
+  - id: fold-t1-t2
+    title: Faltungen mit gleicher Signatur
+    level: 2
+  - id: sequence-state
+    title: Sequenzierung zustandsabhängiger Berechnungen
+    level: 2
+    long: true
+    tags: [level-up]
+    code:
+      file: code/SequenceState.hs
+      check: code/SequenceStateCheck.hs
+  - id: graph-reachability
+    title: Erreichbarkeit in Graphen
+    kind: challenge
+    level: 2
+    long: true
+    after: [sequence-state]
+    code:
+      file: code/Reachability.hs
+      check: code/ReachabilityCheck.hs
+
+  - checklist: selbstevaluation-funktoren-monaden
+    text: selfeval.typ
+
+  - section: Suchen
+
+  - id: search
+    title: Suchen
+    kind: challenge
+    level: 3
+    long: true
+    tags: [deep-dive]
+    code:
+      shared: search-tools
+      check: code/SearchCheck.hs
+  - id: graph-coloring
+    title: Graphfärbungsproblem
+    kind: challenge
+    level: 3
+    tags: [deep-dive]
+    after: [search]
+    code:
+      shared: search-tools
+      check: code/GraphColoringCheck.hs
+
+  - section: Reguläre Ausdrücke und Automaten
+
+  - id: thompson
+    title: Thompson-Konstruktion
+    kind: challenge
+    level: 2
+    long: true
+    after: [regexp-type]
+    code:
+      shared: regular-expressions
+      check: code/ThompsonCheck.hs
+  - id: epsilon-elimination
+    title: Elimination von ε-Transitionen
+    kind: challenge
+    level: 2
+    long: true
+    after: [thompson]
+    code:
+      shared: regular-expressions
+      check: code/EpsilonCheck.hs
+  - id: powerset-construction
+    title: Potenzmengenkonstruktion
+    kind: challenge
+    level: 2
+    long: true
+    after: [epsilon-elimination]
+    code:
+      shared: regular-expressions
+      check: code/PowersetCheck.hs
+  - id: state-elimination
+    title: Zustandseliminierung
+    kind: challenge
+    level: 2
+    long: true
+    after: [powerset-construction]
+    code:
+      shared: regular-expressions
+      check: code/StateElimCheck.hs
+
+  - section: Parser
+
+  - id: parser-monadic
+    title: Monadische Parser
+    kind: challenge
+    level: 2
+    long: true
+    tags: [parser]
+    after: [parser-combinators]
+    code:
+      shared: parser
+      check: code/ParserMonadicCheck.hs
+  - id: regexp-parser
+    title: Parser für reguläre Ausdrücke
+    kind: challenge
+    level: 2
+    long: true
+    tags: [parser]
+    after: [regexp-type, parser-monadic]
+    code:
+      shared: parser
+      check: code/RegExpParserCheck.hs
+
+  - section: Vertiefung
+
+  - page: parsers-further
+    title: Tiefer in Parser einsteigen

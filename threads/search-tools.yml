@@ -1,0 +1,8 @@
+title: Suchen
+description: Eine allgemeine Suche und was sich mit ihr lösen lässt.
+files:
+  - code/Search.hs
+  - code/GraphColoring.hs
+steps:
+  - search
+  - graph-coloring

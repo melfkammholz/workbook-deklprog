@@ -1,0 +1,26 @@
+title: Kapselung des Nichtdeterminismus
+summary: Alle Lösungen einsammeln mit findall/3.
+intro: intro.typ
+defaults:
+  scratch: prolog
+items:
+  - id: all-trees-prolog
+    title: Alle Bäume
+    level: 2
+    long: true
+    start-here: true
+    code:
+      language: prolog
+      file: code/AllTrees.pl
+      check: code/AllTreesCheck.pl
+  - id: all-btrees
+    title: Alle Binärbäume
+    level: 2
+    after: [count-nodes]
+    code:
+      language: prolog
+      file: code/AllBtrees.pl
+      check: code/AllBtreesCheck.pl
+
+  - checklist: selbstevaluation-kapselung
+    text: selfeval.typ

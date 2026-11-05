@@ -1,0 +1,62 @@
+title: Algebraische Datentypen
+summary: Eigene Datentypen definieren und Funktionen darüber schreiben.
+intro: intro.typ
+defaults:
+  scratch: haskell
+items:
+  - id: adt-definition
+    title: Algebraische Datentypen definieren
+  - id: adt-kinds
+    title: Aufzählungstypen, Verbundstypen und rekursive Datentypen
+    start-here: true
+  - id: prelude-constructors
+    title: Typen aus der Prelude
+  - id: int-list-length
+    title: Die Länge einer IntList
+    start-here: true
+    code:
+      language: haskell
+  - id: show-values
+    title: Werte im GHCi anzeigen
+  - id: define-functions
+    title: Wie definieren wir Funktionen?
+  - id: non-empty
+    title: Listen mit mindestens einem Element
+    level: 2
+    code:
+      language: haskell
+  - id: todo-list
+    title: Zustand in einem Datentyp
+    level: 2
+    start-here: true
+    after: [imperative-variables]
+    code:
+      file: code/TodoList.hs
+      check: code/TodoListCheck.hs
+
+  - checklist: selbstevaluation-datentypen
+    text: selfeval.typ
+
+  - section: Reguläre Ausdrücke und Automaten
+
+  - id: regexp-type
+    title: Algebraischer Datentyp für reguläre Ausdrücke
+    level: 2
+    code:
+      language: haskell
+  - id: brzozowski
+    title: Brzozowski-Ableitung formaler Sprachen
+    kind: challenge
+    level: 3
+    long: true
+    after: [regexp-type]
+    code:
+      file: code/Brzozowski.hs
+      check: code/BrzozowskiCheck.hs
+      support: [code/RegExp.hs]
+      options: ["-XOverloadedStrings"]
+
+  - section: Vertiefung
+
+  - page: member-continuations
+    title: Das Wortproblem mit continuations

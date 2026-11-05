@@ -1,0 +1,43 @@
+title: Pattern Matching
+summary: Auf Daten zugreifen und Fälle unterscheiden.
+intro: intro.typ
+defaults:
+  scratch: haskell
+items:
+  - id: data-access
+    title: Auf Daten zugreifen
+    start-here: true
+  - id: queue
+    kind: challenge
+    title: Queue
+    start-here: true
+    level: 2
+    code:
+      file: code/Queue.hs
+      check: code/QueueCheck.hs
+  - id: avl-trees
+    kind: challenge
+    title: AVL-Bäume
+    level: 2
+    tags: [level-up]
+    code:
+      file: code/Avl.hs
+      check: code/AvlCheck.hs
+
+  - checklist: selbstevaluation-pattern-matching
+    text: selfeval.typ
+
+  - section: Lineare Gleichungssysteme
+
+  - id: block-matrices
+    title: Blockmatrizen
+    level: 2
+    long: true
+    code:
+      shared: linear-systems
+      check: code/LinearAlgebraCheck.hs
+
+  - section: Vertiefung
+
+  - page: queue-guarantees
+    title: Queues mit besseren Garantien

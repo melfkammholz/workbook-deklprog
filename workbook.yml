@@ -1,0 +1,14 @@
+title: Deklarative Programmierung
+language: de
+landing: landing.typ
+parts:
+  - title: Funktionale Programmierung
+    summary: Programmieren in Haskell.
+    chapters: [01-expressions-functions, 02-types, 03-polymorphism, 04-pattern-matching, 05-testing, 06-higher-order-functions, 07-abstract-data-types, 08-type-classes, 09-sequences, 10-list-comprehensions, 11-lazy-evaluation, 12-input-output, 13-functors-monads, 14-test-data-generation]
+  - title: Logische Programmierung
+    summary: Programmieren in Prolog.
+    chapters: [15-prolog-basics, 16-programming-techniques, 17-computation, 18-negation, 19-cut, 20-arithmetic, 21-higher-order-predicates, 22-encapsulation, 23-logic-puzzles]
+  - title: Präsenzaufgaben
+    summary: Die Aufgaben aus den Übungen, nach Wochen.
+    numbered: false
+    chapters: [woche-03]

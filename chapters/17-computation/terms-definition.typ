@@ -1,0 +1,1 @@
+Wie sind Terme definiert?

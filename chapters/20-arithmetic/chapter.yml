@@ -1,0 +1,77 @@
+title: Prolog-Arithmetik und nicht-relationale Prädikate
+summary: Rechnen mit is/2 und was dabei von den Relationen übrig bleibt.
+intro: intro.typ
+defaults:
+  scratch: prolog
+items:
+  - section: Rechnen mit is
+
+  - id: is-purpose
+    title: Wofür is/2?
+  - id: is-valid
+    title: Welche Anfragen sind valide?
+    start-here: true
+  - id: is-vs-unify
+    title: Warum nicht =/2?
+  - id: other-arith
+    title: Weitere Prädikate, die rechnen
+    level: 1
+  - id: instantiated-args
+    title: Hinreichend instanziiert
+    level: 2
+  - id: arith-compare-query
+    title: "Eine Anfrage mit =:="
+  - id: arith-vs-peano
+    title: Arithmetik und Peano-Zahlen
+    level: 2
+    after: [peano]
+
+  - section: Relationale und nicht-relationale Prädikate
+
+  - id: fully-instantiated
+    title: Vollständig instanziiert
+  - id: multimodal
+    title: Relational, multimodal, multidirektional
+  - id: mode-indicators
+    title: Argument mode indicators
+    tags: [level-up]
+  - id: count-nodes
+    title: Knoten zählen
+    level: 2
+    code:
+      language: prolog
+  - id: relational-linear
+    title: Eine Funktion umkehren
+    level: 2
+    long: true
+    start-here: true
+    code:
+      language: prolog
+      file: code/RelationalLinear.pl
+      check: code/RelationalLinearCheck.pl
+  - id: relational-square
+    title: Die Umkehrung von x²
+    level: 2
+    after: [relational-linear]
+    code:
+      language: prolog
+
+  - checklist: selbstevaluation-arithmetik
+    text: selfeval.typ
+
+  - section: Peano-Zahlen
+
+  - id: to-nat
+    title: Peano-Zahlen umwandeln
+    after: [peano]
+    code:
+      shared: peano
+      check: code/ToNatCheck.pl
+  - id: sieve
+    title: Sieb des Eratosthenes
+    level: 2
+    long: true
+    after: [peano, to-nat]
+    code:
+      shared: peano
+      check: code/SieveCheck.pl

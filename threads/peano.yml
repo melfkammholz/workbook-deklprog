@@ -1,0 +1,9 @@
+title: Peano-Zahlen
+description: Vom Addieren bis zum Sieb des Eratosthenes.
+language: prolog
+files:
+  - code/Peano.pl
+steps:
+  - peano
+  - to-nat
+  - sieve

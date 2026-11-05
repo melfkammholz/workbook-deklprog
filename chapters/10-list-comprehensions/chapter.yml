@@ -1,0 +1,23 @@
+title: List Comprehensions
+summary: Listen beschreiben statt zusammenbauen.
+intro: intro.typ
+defaults:
+  scratch: haskell
+items:
+  - id: lc-math
+    title: Das Vorbild von list comprehensions
+  - id: lc-parts
+    title: Die Teile einer list comprehension
+  - id: lc-basics
+    title: map, filter und concatMap
+    code:
+      language: haskell
+  - id: lc-translate
+    title: List comprehensions übersetzen
+    level: 2
+    start-here: true
+    code:
+      language: haskell
+
+  - checklist: selbstevaluation-list-comprehensions
+    text: selfeval.typ

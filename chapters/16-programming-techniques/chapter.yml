@@ -1,0 +1,51 @@
+title: Elementare Programmiertechniken
+summary: Generate-and-test und musterorientierte Prädikate.
+intro: intro.typ
+defaults:
+  scratch: prolog
+items:
+  - id: generate-test
+    title: Generate-and-test
+  - id: pattern-predicates
+    title: Musterorientierte Prädikate
+  - id: combinatorics
+    title: Kombinatorik
+    level: 2
+    long: true
+    code:
+      language: prolog
+      file: code/Combinatorics.pl
+      check: code/CombinatoricsCheck.pl
+  - id: hamilton
+    title: Hamiltonkreise
+    kind: challenge
+    level: 2
+    long: true
+    after: [combinatorics]
+    code:
+      language: prolog
+      file: code/Hamilton.pl
+      check: code/HamiltonCheck.pl
+
+  - checklist: selbstevaluation-programmiertechniken
+    text: selfeval.typ
+
+  - section: Ein SAT-Löser
+
+  - id: sat-solver
+    title: Erfüllbarkeitsproblem der Aussagenlogik
+    kind: challenge
+    level: 2
+    long: true
+    start-here: true
+    code:
+      shared: sat
+      check: code/SatCheck.pl
+  - id: desugar
+    title: Implikation und Äquivalenz
+    level: 2
+    long: true
+    after: [sat-solver]
+    code:
+      shared: sat
+      check: code/DesugarCheck.pl

@@ -1,0 +1,121 @@
+title: Polymorphismus
+summary: Datentypen und Funktionen, die für viele Typen funktionieren.
+intro: intro.typ
+defaults:
+  scratch: haskell
+items:
+  - section: Typen und Typkonstruktoren
+
+  - id: data-definition-general
+    title: Datentypdefinitionen im Allgemeinen
+  - id: constructor-types
+    title: Typen von Datenkonstruktoren
+    start-here: true
+  - id: parametric-polymorphism
+    title: Parametrischer Polymorphismus
+  - id: type-constructor-kinds
+    title: Typkonstruktoren und ihre Kinds
+  - id: either-kinds
+    title: Die Kinds von Either
+  - id: type-from-constructor
+    title: Vom Typkonstruktor zum Typ
+  - id: type-vs-constructors
+    title: Typ, Datenkonstruktor und Typkonstruktor
+  - id: pair-types
+    title: Zwei Definitionen von Pair
+  - id: application-syntax
+    title: "f 1 2 oder f(1, 2)?"
+
+  - section: Polymorphe Listen
+
+  - id: list-functions-concept
+    title: Funktionen auf Listen für alle Typen
+  - id: list-term-tree
+    title: Listen als Termbaum
+  - id: heterogeneous-list
+    title: Eine Liste mit verschiedenen Typen?
+  - id: heterogeneous-list-fix
+    title: Eine Liste mit verschiedenen Typen!
+    level: 2
+    after: [heterogeneous-list]
+  - id: show-type
+    title: Der Typ von show
+    level: 2
+
+  - section: Arbeiten mit Listen
+
+  - page: base-library
+    title: Die base-Bibliothek
+  - id: programming-patterns
+    title: Programmierschablonen
+    start-here: true
+  - id: idiomatic-iteration
+    title: Über Listen iterieren
+    code:
+      language: haskell
+  - id: idiomatic-cons
+    title: Idiomatisch quadrieren
+  - id: binary-search
+    title: Binäre Suche auf Listen
+  - id: safe-index
+    title: Sicherer Listenzugriff
+    start-here: true
+    code:
+      language: haskell
+  - id: partial-functions-spotting
+    title: Partielle Funktionen erkennen
+  - id: partial-functions
+    title: Partielle Funktionen implementieren
+    after: [partial-functions-spotting]
+    code:
+      file: code/PartialFunctions.hs
+
+  - section: Bäume
+
+  - id: tree-type-bug
+    title: Ein fehlerhafter Baumtyp
+  - id: tree-path
+    title: Pfade in Bäumen
+    level: 2
+    similar: [safe-index]
+    code:
+      language: haskell
+
+  - section: Größere Aufgaben
+
+  - id: gcd-pf
+    kind: challenge
+    title: Größter gemeinsamer Teiler & Primfaktorzerlegung
+    tags: [rekursion]
+    similar: [binary-exponentiation]
+    code:
+      file: code/Gcd.hs
+      check: code/GcdCheck.hs
+  - id: mergesort
+    kind: challenge
+    title: Mergesort
+    tags: [deep-dive]
+    code:
+      file: code/Mergesort.hs
+      check: code/MergesortCheck.hs
+  - id: rational-numbers
+    kind: challenge
+    title: Rationale Zahlen
+    after: [gcd-pf]
+    code:
+      file: code/Rational.hs
+      check: code/RationalCheck.hs
+
+  - checklist: selbstevaluation-polymorphismus
+    text: selfeval.typ
+
+  - section: Differenzieren
+
+  - id: symbolic-differentiation
+    kind: challenge
+    title: Symbolisches Differenzieren
+    start-here: true
+    tags: [diff]
+    code:
+      file: code/SymbolicDifferentiation.hs
+      check: code/SymbolicDifferentiationCheck.hs

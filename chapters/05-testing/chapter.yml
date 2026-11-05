@@ -1,0 +1,26 @@
+title: Automatisches Testen
+summary: Eigenschaften von Funktionen mit QuickCheck prüfen.
+intro: intro.typ
+defaults:
+  scratch: haskell
+items:
+  - id: quickcheck-search-tree
+    title: Eigenschaften von Suchbäumen
+    start-here: true
+    level: 2
+    code:
+      language: haskell
+  - id: quickcheck-preconditions
+    title: Vorbedingungen in QuickCheck
+    start-here: true
+  - id: quickcheck-implication
+    title: Nachteile von (==>)
+    level: 2
+    after: [quickcheck-preconditions]
+  - id: testing-limits
+    title: Was Tests zeigen können
+  # Noch ohne gutes Beispiel, siehe den Entwurf in der Datei.
+  # - id: quickcheck-reference-implementation
+  #   title: Referenz-Implementierungen
+  - checklist: selbstevaluation-testen
+    text: selfeval.typ

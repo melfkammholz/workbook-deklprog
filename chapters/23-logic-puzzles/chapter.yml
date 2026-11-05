@@ -1,0 +1,27 @@
+title: Logik-Puzzles
+summary: Rätsel zur Belustigung.
+intro: intro.typ
+defaults:
+  scratch: prolog
+items:
+  - id: zebra
+    title: Das Zebra-Rätsel
+    kind: challenge
+    level: 3
+    long: true
+    code:
+      language: prolog
+      file: code/Zebra.pl
+      check: code/ZebraCheck.pl
+  - id: cheryl
+    title: Cheryls Geburtstag
+    kind: challenge
+    level: 3
+    long: true
+    code:
+      language: prolog
+      file: code/Cheryl.pl
+      check: code/CherylCheck.pl
+
+  - checklist: selbstevaluation-puzzles
+    text: selfeval.typ

@@ -1,0 +1,9 @@
+title: Akkorde
+description: Vom Halbtonschritt zu den Dur-Akkorden einer Tonleiter.
+language: prolog
+files:
+  - code/Chords.pl
+steps:
+  - chord-terms
+  - semitone-append
+  - all-major

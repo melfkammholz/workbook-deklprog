@@ -1,0 +1,12 @@
+title: Parser
+description: Vom einfachen Parser über monadische Kombinatoren zu regulären Ausdrücken.
+page: parser.typ
+finale: regexp-parser
+files:
+  - code/MonadicParser.hs
+  - code/RegExpParser.hs
+support: [../chapters/02-types/code/RegExp.hs]
+steps:
+  - parser-combinators
+  - parser-monadic
+  - regexp-parser

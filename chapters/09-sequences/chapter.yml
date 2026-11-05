@@ -1,0 +1,24 @@
+title: Sequenzen
+summary: Ranges und die Typklassen Enum und Bounded.
+intro: intro.typ
+defaults:
+  scratch: haskell
+items:
+  - id: enum-ranges
+    title: Ranges und Enum
+  - id: enum-defaults
+    title: Die übrigen Funktionen von Enum
+  - id: direction
+    title: Himmelsrichtungen
+    start-here: true
+    code:
+      language: haskell
+  - id: cycle-from
+    title: Werte im Kreis
+    level: 2
+    after: [direction]
+    code:
+      language: haskell
+
+  - checklist: selbstevaluation-sequenzen
+    text: selfeval.typ

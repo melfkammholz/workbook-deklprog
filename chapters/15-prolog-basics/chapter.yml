@@ -1,0 +1,107 @@
+title: "Prolog, Prolog!"
+summary: "Relationen statt Funktionen: Fakten, Regeln und Anfragen."
+intro: intro.typ
+defaults:
+  scratch: prolog
+items:
+  - section: Grundlagen
+
+  - id: prolog-variables
+    title: Variablen in Haskell und Prolog
+  - id: prolog-principle
+    title: Das Berechnungsprinzip von Prolog
+    start-here: true
+  - id: prolog-rule-statement
+    title: Eine Aussage als Programm
+  - id: functions-as-relations
+    title: Funktionen als Relationen
+  - id: bool-functions
+    title: Funktionen nach Bool
+  - id: prolog-logic-syntax
+    title: Prolog und Aussagenlogik
+  - id: fol-subset
+    title: Eine echte Teilmenge
+  - id: fact-rule-terms
+    title: Fakt, Regel, Klausel, Prädikat, Relation
+  - id: prolog-tree-term
+    title: Datentypen als Terme
+  - id: equality-prolog
+    title: Gleichheit in Prolog
+  - id: unify-concepts
+    title: Konzepte hinter Anfragen
+
+  - section: Relationen und Listen
+
+  - id: count-answers
+    title: Wie viele Ergebnisse?
+    start-here: true
+  - id: relations-append
+    title: In Relationen denken
+    level: 2
+  - id: sublist-results
+    title: Alle Teillisten
+  - id: zip-prolog
+    title: zip und unzip
+    code:
+      language: prolog
+  - id: append-predicates
+    title: Listenprädikate mit append
+    level: 2
+    long: true
+    code:
+      language: prolog
+  - id: not-member-bug
+    title: Ein falsches not_member
+    level: 2
+  - id: nth-peano
+    title: Das n-te Element
+    code:
+      language: prolog
+  - id: dice-nondeterminism
+    title: Nichtdeterminismus und die Listenmonade
+    code:
+      language: prolog
+  - id: fib-control
+    title: Fibonacci und der Programmablauf
+
+  - section: Graphen
+
+  - id: reachable-prolog
+    title: Erreichbarkeit in Graphen
+    level: 2
+    long: true
+    code:
+      language: prolog
+      file: code/Reachable.pl
+      check: code/ReachableCheck.pl
+
+  - checklist: selbstevaluation-prolog
+    text: selfeval.typ
+
+  - section: Akkorde
+
+  - id: chord-terms
+    title: Atome, Fakten, Regeln und Variablen
+  - id: semitone-append
+    title: Halbtonschritte mit append
+    level: 2
+    after: [chord-terms]
+    code:
+      shared: chords
+      check: code/SemitoneCheck.pl
+  - id: all-major
+    title: Diatonische Dur-Akkorde
+    level: 2
+    after: [chord-terms]
+    code:
+      shared: chords
+      check: code/AllMajorCheck.pl
+
+  - section: Peano-Zahlen
+
+  - id: peano
+    title: Peano-Arithmetik
+    level: 2
+    code:
+      shared: peano
+      check: code/PeanoCheck.pl

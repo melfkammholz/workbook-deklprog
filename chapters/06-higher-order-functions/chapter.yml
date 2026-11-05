@@ -1,0 +1,182 @@
+title: Funktionen höherer Ordnung
+summary: Funktionen als Werte, Faltungen und Komposition.
+intro: intro.typ
+defaults:
+  scratch: haskell
+items:
+  - section: Grundlagen
+
+  - id: hof-definition
+    title: Was sind Funktionen höherer Ordnung?
+  - id: lambda-abstractions
+    title: Lambda-Abstraktionen
+    start-here: true
+  - id: arrow-types
+    title: Klammern in Funktionstypen
+  - id: associativity-concepts
+    title: Assoziativität von Applikation und (->)
+  - id: partial-application
+    title: Partielle Applikation
+  - id: currying
+    title: Currying
+    start-here: true
+  - id: what-are-sections
+    title: Was sind Sections?
+  - id: sectioning-subtract
+    title: (- 1) und subtract
+    after: [what-are-sections]
+  - id: eta-reduction
+    title: Eta-Reduktion
+
+  - section: map, filter und Co.
+
+  - id: generic-hofs
+    title: Generische Programmierung
+  - id: blue-pixels
+    title: Blaue Pixel zählen
+    code:
+      language: haskell
+  - id: zip-with
+    title: zipWith
+    level: 2
+    code:
+      file: code/ZipWith.hs
+  - id: while-loop
+    title: Kontrollstrukturen als Funktionen
+    level: 2
+    tags: [level-up]
+    after: [imperative-variables]
+
+  - section: Faltung
+
+  - id: natural-fold
+    title: Die natürliche Faltung auf Listen
+  - id: foldl-vs-foldr
+    title: foldl und foldr
+  - id: fold-identity
+    title: Die Identität als Faltung
+  - id: partial-identities
+    title: Partiell applizierte Funktionen
+    level: 2
+  - id: map-filter-foldr
+    title: map und filter mit foldr
+    start-here: true
+  - id: map-foldr-simplify
+    title: Einen Lambda-Ausdruck vereinfachen
+    level: 2
+    after: [map-filter-foldr]
+  - id: foldr-pattern
+    title: Das Muster hinter foldr
+    start-here: true
+    level: 2
+  - id: foldl-reverse
+    title: foldl mit (flip (:))
+    level: 2
+    after: [fold-identity]
+  - id: concat-map-fold
+    title: Eine bekannte Funktion mit foldr
+  - id: fold-signatures
+    title: Faltungsfunktionen herleiten
+  - id: insert-many
+    title: Viele Elemente im Suchbaum
+    code:
+      language: haskell
+  - id: fold-tree-functions
+    kind: challenge
+    title: Listenfunktionen auf Bäumen
+    start-here: true
+    code:
+      file: code/FoldTree.hs
+      check: code/FoldTreeCheck.hs
+  - id: leaf-tree-foldr
+    title: foldr auf blattbeschrifteten Bäumen
+    level: 3
+    tags: [level-up]
+    code:
+      language: haskell
+
+  - section: Entfalten
+
+  - id: unfoldr
+    title: unfoldr
+    level: 3
+    long: true
+    tags: [deep-dive]
+    code:
+      file: code/Unfoldr.hs
+      check: code/UnfoldrCheck.hs
+  - id: unfold-tree
+    title: Bäume entfalten
+    level: 3
+    tags: [deep-dive]
+    after: [unfoldr]
+    code:
+      file: code/UnfoldTree.hs
+      check: code/UnfoldTreeCheck.hs
+
+  - section: Komposition und punktfreier Stil
+
+  - id: compose-two-args
+    title: Komposition mit zweistelligen Funktionen
+    level: 2
+  - id: replace-pointfree
+    title: Punktfrei ersetzen
+    level: 2
+  - id: simplify-expressions
+    title: Ausdrücke vereinfachen
+    level: 2
+
+  - section: Funktionen als Daten
+
+  - id: map-as-function
+    title: Eine Map als Funktion
+    code:
+      language: haskell
+  - id: alter
+    title: Einfügen, ändern und löschen in einem
+    level: 2
+    code:
+      language: haskell
+  - id: swaps
+    kind: challenge
+    title: Vertauschungen
+    level: 2
+    code:
+      file: code/Swaps.hs
+      check: code/SwapsCheck.hs
+
+  - section: Haskell-Konzepte in Python
+
+  - id: foldable-python
+    title: Haskell-Konzepte in Python
+    level: 2
+  - id: python-closure
+    title: Ein bug mit Kakao
+    level: 2
+  - id: python-array
+    title: Arrays ohne Mutation
+    code:
+      language: python
+
+  - page: python-repeat
+    title: Selbsttests in Python
+
+  - checklist: selbstevaluation-funktionen-hoeherer-ordnung
+    text: selfeval.typ
+
+  - section: Parser
+
+  - id: parser-combinators
+    kind: challenge
+    title: Recursive Descent Parser
+    level: 2
+    long: true
+    tags: [deep-dive, parser]
+    code:
+      file: code/Parser.hs
+      check: code/ParserCheck.hs
+
+  - section: Vertiefung
+
+  - page: foldable-java
+    title: Foldable in Java

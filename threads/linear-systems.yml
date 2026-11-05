@@ -1,0 +1,13 @@
+title: Lineare Gleichungssysteme
+description: Von Blockmatrizen zur LR-Zerlegung.
+page: linear-systems.typ
+finale: lr-decomposition
+files:
+  - code/LinearAlgebra.hs
+  - code/Tropical.hs
+steps:
+  - block-matrices
+  - mat22
+  - log-fib
+  - tropical
+  - lr-decomposition

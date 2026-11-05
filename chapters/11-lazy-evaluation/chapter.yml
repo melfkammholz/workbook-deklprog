@@ -1,0 +1,109 @@
+title: Lazy Evaluation
+summary: Nur rechnen, was gebraucht wird, und mit unendlichen Daten arbeiten.
+intro: intro.typ
+defaults:
+  scratch: haskell
+items:
+  - section: Grundlagen
+
+  - id: lazy-what
+    title: Was ist Lazy Evaluation?
+  - id: lazy-trigger
+    title: Wie Berechnungen angestoßen werden
+  - id: lazy-stronger
+    title: Berechnungsstärker
+  - id: lazy-benefits
+    title: Praktische Vorteile
+  - id: lazy-sharing
+    title: Mehrfache Berechnungen vermeiden
+  - id: lazy-let
+    title: Division in einem let
+  - id: lazy-length-loop
+    title: Die Länge von loops
+    start-here: true
+  - id: foldl-infinite
+    title: foldl auf unendlichen Listen
+  - id: scans
+    title: scanl und scanr
+    code:
+      language: haskell
+
+  - section: Zyklische Daten
+
+  - id: cyclic-list
+    title: Zyklische Listen
+    level: 2
+    long: true
+    start-here: true
+    code:
+      language: haskell
+  - id: doubly-linked
+    title: Doppelt verkettete Listen
+    level: 2
+    long: true
+    after: [cyclic-list]
+    code:
+      file: code/Doubly.hs
+      check: code/DoublyCheck.hs
+
+  - section: Unendliche Listen und Memoization
+
+  - id: sundaram
+    title: Sieb von Sundaram
+    kind: challenge
+    level: 2
+    long: true
+    code:
+      file: code/Sundaram.hs
+      check: code/SundaramCheck.hs
+  - id: fixed-point
+    title: Fixpunktverfahren
+    kind: challenge
+    level: 2
+    long: true
+    code:
+      file: code/FixedPoint.hs
+      check: code/FixedPointCheck.hs
+  - id: edit-distance
+    title: Editierdistanz
+    kind: challenge
+    level: 2
+    tags: [deep-dive]
+    code:
+      file: code/EditDistance.hs
+      check: code/EditDistanceCheck.hs
+  - id: grid-path
+    title: Minimaler Pfad in einem ganzzahligen Gitter
+    kind: challenge
+    level: 2
+    long: true
+    tags: [deep-dive]
+    after: [edit-distance]
+    code:
+      file: code/GridPath.hs
+      check: code/GridPathCheck.hs
+
+  - checklist: selbstevaluation-lazy-evaluation
+    text: selfeval.typ
+
+  - section: Reguläre Ausdrücke und Automaten
+
+  - id: automata-trees
+    title: Endliche Automaten als unendliche Bäume
+    kind: challenge
+    level: 2
+    code:
+      file: code/AutomataTrees.hs
+      check: code/AutomataTreesCheck.hs
+
+  - section: Differenzieren
+
+  - id: gradient-descent
+    title: Gradientenverfahren
+    kind: challenge
+    level: 2
+    tags: [diff]
+    after: [fixed-point, automatic-differentiation]
+    code:
+      file: code/GradientDescent.hs
+      check: code/GradientDescentCheck.hs
