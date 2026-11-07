@@ -2,7 +2,7 @@ module FoldMaybeEither where
 
 #ifdef TEMPLATE
 -- Think about the type signature first.
-foldMaybe fnothing fjust value = undefined
+foldMaybe = undefined
 #else
 foldMaybe :: b -> (a -> b) -> Maybe a -> b
 foldMaybe fnothing fjust value =
@@ -13,7 +13,7 @@ foldMaybe fnothing fjust value =
 
 #ifdef TEMPLATE
 -- Think about the type signature first.
-foldEither fleft fright value = undefined
+foldEither = undefined
 #else
 foldEither :: (a -> c) -> (b -> c) -> Either a b -> c
 foldEither fleft fright value =
