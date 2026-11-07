@@ -81,6 +81,7 @@ items:
   - section: Größere Aufgaben
 
   - id: huffman
+    extra: true
     title: Komprimierung mit Huffman-Kodierung
     kind: challenge
     level: 2
@@ -93,6 +94,7 @@ items:
   - section: Differenzieren
 
   - id: automatic-differentiation
+    extra: true
     title: Automatisches Differenzieren
     kind: challenge
     level: 2
@@ -117,6 +119,7 @@ items:
       file: code/LogFib.hs
       check: code/LogFibCheck.hs
   - id: tropical
+    extra: true
     title: Kürzeste Wege mit tropischen Zahlen
     kind: challenge
     level: 3
@@ -127,6 +130,7 @@ items:
       shared: linear-systems
       check: code/TropicalCheck.hs
   - id: lr-decomposition
+    extra: true
     title: LR-Zerlegung
     kind: challenge
     level: 3
@@ -139,6 +143,7 @@ items:
   - section: Polynome und Eigenwerte
 
   - id: polynomial-roots
+    extra: true
     title: Nullstellen ganzzahliger Polynome
     kind: challenge
     level: 2
@@ -147,6 +152,7 @@ items:
       shared: polynomials
       check: code/PolynomialCheck.hs
   - id: eigenvalues
+    extra: true
     title: Eigenwerte unimodularer Matrizen
     kind: challenge
     level: 3

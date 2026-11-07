@@ -98,6 +98,7 @@ items:
   - section: Entfalten
 
   - id: unfoldr
+    extra: true
     title: unfoldr
     level: 3
     long: true
@@ -106,6 +107,7 @@ items:
       file: code/Unfoldr.hs
       check: code/UnfoldrCheck.hs
   - id: unfold-tree
+    extra: true
     title: Bäume entfalten
     level: 3
     tags: [deep-dive]
@@ -164,6 +166,7 @@ items:
   - section: Parser
 
   - id: parser-combinators
+    extra: true
     kind: challenge
     title: Recursive Descent Parser
     level: 2

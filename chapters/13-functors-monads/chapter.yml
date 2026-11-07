@@ -190,6 +190,7 @@ items:
   - section: Suchen
 
   - id: search
+    extra: true
     title: Suchen
     kind: challenge
     level: 3
@@ -199,6 +200,7 @@ items:
       shared: search-tools
       check: code/SearchCheck.hs
   - id: graph-coloring
+    extra: true
     title: Graphfärbungsproblem
     kind: challenge
     level: 3

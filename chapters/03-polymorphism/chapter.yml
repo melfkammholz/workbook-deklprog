@@ -92,6 +92,7 @@ items:
       file: code/Gcd.hs
       check: code/GcdCheck.hs
   - id: mergesort
+    extra: true
     kind: challenge
     title: Mergesort
     tags: [deep-dive]

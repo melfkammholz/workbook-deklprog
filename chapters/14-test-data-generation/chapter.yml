@@ -16,6 +16,7 @@ items:
     code:
       language: haskell
   - id: quickcheck-simple
+    extra: true
     title: Funktionen mit variabler Argumentanzahl am Beispiel quickCheck
     kind: challenge
     level: 3
@@ -25,6 +26,7 @@ items:
       file: code/SimpleQuickCheck.hs
       check: code/SimpleQuickCheckCheck.hs
   - id: quickcheck-prng
+    extra: true
     title: Zufällige Parameter in QuickCheck
     kind: challenge
     level: 3

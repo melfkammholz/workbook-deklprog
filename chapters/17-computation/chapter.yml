@@ -139,6 +139,7 @@ items:
     title: Unifikation im SLD-Baum
     level: 2
   - id: sld-graphviz
+    extra: true
     title: SLD-Bäume generieren
     kind: challenge
     level: 2

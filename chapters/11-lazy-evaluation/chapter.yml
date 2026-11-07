@@ -65,6 +65,7 @@ items:
       file: code/FixedPoint.hs
       check: code/FixedPointCheck.hs
   - id: edit-distance
+    extra: true
     title: Editierdistanz
     kind: challenge
     level: 2
@@ -73,6 +74,7 @@ items:
       file: code/EditDistance.hs
       check: code/EditDistanceCheck.hs
   - id: grid-path
+    extra: true
     title: Minimaler Pfad in einem ganzzahligen Gitter
     kind: challenge
     level: 2
