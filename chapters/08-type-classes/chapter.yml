@@ -90,9 +90,6 @@ items:
       file: code/Huffman.hs
       check: code/HuffmanCheck.hs
 
-  - checklist: selbstevaluation-typklassen-instanzen
-    text: selfeval.typ
-
   - section: Differenzieren
 
   - id: automatic-differentiation
@@ -166,3 +163,6 @@ items:
 
   - page: tropical-num-laws
     title: Num-Gesetze und Halbringe
+
+  - checklist: selbstevaluation-typklassen-instanzen
+    text: selfeval.typ

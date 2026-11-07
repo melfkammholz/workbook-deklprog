@@ -161,9 +161,6 @@ items:
   - page: python-repeat
     title: Selbsttests in Python
 
-  - checklist: selbstevaluation-funktionen-hoeherer-ordnung
-    text: selfeval.typ
-
   - section: Parser
 
   - id: parser-combinators
@@ -180,3 +177,6 @@ items:
 
   - page: foldable-java
     title: Foldable in Java
+
+  - checklist: selbstevaluation-funktionen-hoeherer-ordnung
+    text: selfeval.typ

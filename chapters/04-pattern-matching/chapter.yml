@@ -24,8 +24,26 @@ items:
       file: code/Avl.hs
       check: code/AvlCheck.hs
 
-  - checklist: selbstevaluation-pattern-matching
-    text: selfeval.typ
+  - section: Guards
+
+  - id: guard-pitfalls
+    title: Stolperfallen bei Guards
+    start-here: true
+    code:
+      file: code/Guards.hs
+  - id: leap-years
+    title: Schaltjahre
+    level: 2
+    after: [guard-pitfalls]
+    code:
+      file: code/LeapYear.hs
+      check: code/LeapYearCheck.hs
+  - id: rewrite-guards
+    title: Guards umschreiben
+    after: [guard-pitfalls]
+    code:
+      file: code/RewriteGuards.hs
+      check: code/RewriteGuardsCheck.hs
 
   - section: Lineare Gleichungssysteme
 
@@ -41,3 +59,6 @@ items:
 
   - page: queue-guarantees
     title: Queues mit besseren Garantien
+
+  - checklist: selbstevaluation-pattern-matching
+    text: selfeval.typ

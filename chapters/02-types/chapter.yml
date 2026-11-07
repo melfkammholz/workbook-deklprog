@@ -34,9 +34,6 @@ items:
       file: code/TodoList.hs
       check: code/TodoListCheck.hs
 
-  - checklist: selbstevaluation-datentypen
-    text: selfeval.typ
-
   - section: Reguläre Ausdrücke und Automaten
 
   - id: regexp-type
@@ -60,3 +57,6 @@ items:
 
   - page: member-continuations
     title: Das Wortproblem mit continuations
+
+  - checklist: selbstevaluation-datentypen
+    text: selfeval.typ

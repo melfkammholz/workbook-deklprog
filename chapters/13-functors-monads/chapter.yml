@@ -187,9 +187,6 @@ items:
       file: code/Reachability.hs
       check: code/ReachabilityCheck.hs
 
-  - checklist: selbstevaluation-funktoren-monaden
-    text: selfeval.typ
-
   - section: Suchen
 
   - id: search
@@ -277,3 +274,6 @@ items:
 
   - page: parsers-further
     title: Tiefer in Parser einsteigen
+
+  - checklist: selbstevaluation-funktoren-monaden
+    text: selfeval.typ

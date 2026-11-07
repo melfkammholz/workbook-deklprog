@@ -27,9 +27,6 @@ items:
       file: code/Hamilton.pl
       check: code/HamiltonCheck.pl
 
-  - checklist: selbstevaluation-programmiertechniken
-    text: selfeval.typ
-
   - section: Ein SAT-Löser
 
   - id: sat-solver
@@ -49,3 +46,6 @@ items:
     code:
       shared: sat
       check: code/DesugarCheck.pl
+
+  - checklist: selbstevaluation-programmiertechniken
+    text: selfeval.typ

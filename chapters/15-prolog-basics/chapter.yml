@@ -75,9 +75,6 @@ items:
       file: code/Reachable.pl
       check: code/ReachableCheck.pl
 
-  - checklist: selbstevaluation-prolog
-    text: selfeval.typ
-
   - section: Akkorde
 
   - id: chord-terms
@@ -105,3 +102,6 @@ items:
     code:
       shared: peano
       check: code/PeanoCheck.pl
+
+  - checklist: selbstevaluation-prolog
+    text: selfeval.typ

@@ -56,9 +56,6 @@ items:
     code:
       language: prolog
 
-  - checklist: selbstevaluation-arithmetik
-    text: selfeval.typ
-
   - section: Peano-Zahlen
 
   - id: to-nat
@@ -75,3 +72,6 @@ items:
     code:
       shared: peano
       check: code/SieveCheck.pl
+
+  - checklist: selbstevaluation-arithmetik
+    text: selfeval.typ

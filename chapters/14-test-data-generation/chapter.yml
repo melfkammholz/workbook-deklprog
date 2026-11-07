@@ -35,9 +35,6 @@ items:
       file: code/PrngQuickCheck.hs
       check: code/PrngQuickCheckCheck.hs
 
-  - checklist: selbstevaluation-testdaten
-    text: selfeval.typ
-
   - section: Reguläre Ausdrücke und Automaten
 
   - id: regexp-arbitrary
@@ -50,3 +47,6 @@ items:
       file: code/RegExpGen.hs
       check: code/RegExpGenCheck.hs
       support: [../02-types/code/RegExp.hs]
+
+  - checklist: selbstevaluation-testdaten
+    text: selfeval.typ

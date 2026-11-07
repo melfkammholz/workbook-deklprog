@@ -83,9 +83,6 @@ items:
       file: code/GridPath.hs
       check: code/GridPathCheck.hs
 
-  - checklist: selbstevaluation-lazy-evaluation
-    text: selfeval.typ
-
   - section: Reguläre Ausdrücke und Automaten
 
   - id: automata-trees
@@ -107,3 +104,6 @@ items:
     code:
       file: code/GradientDescent.hs
       check: code/GradientDescentCheck.hs
+
+  - checklist: selbstevaluation-lazy-evaluation
+    text: selfeval.typ

@@ -106,9 +106,6 @@ items:
       file: code/Rational.hs
       check: code/RationalCheck.hs
 
-  - checklist: selbstevaluation-polymorphismus
-    text: selfeval.typ
-
   - section: Differenzieren
 
   - id: symbolic-differentiation
@@ -119,3 +116,6 @@ items:
     code:
       file: code/SymbolicDifferentiation.hs
       check: code/SymbolicDifferentiationCheck.hs
+
+  - checklist: selbstevaluation-polymorphismus
+    text: selfeval.typ
