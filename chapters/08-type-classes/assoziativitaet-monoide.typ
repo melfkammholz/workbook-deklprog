@@ -179,6 +179,4 @@ length xs = getSum (foldMap (const (Sum 1)) xs)
 - Ohne Assoziativität oder ohne neutrales Element können `foldl` und `foldr` verschiedene Ergebnisse liefern.
 - `sum`, `product`, `concat`, `and` und `or` sind genau solche Monoid-Faltungen.
 
-Jetzt bist du dran: Definiere `Semigroup` und `Monoid` selbst.
-
 #practice("semigroup-monoid")

@@ -1,4 +1,4 @@
-Diese Seite geht über die Vorlesung hinaus und ist für dich, falls dich das Thema besonders interessiert. Sie gehört zu #xref("tropical").
+Diese Seite gehört zu #xref("tropical").
 
 Wie auch bei anderen Typklassen muss eine `Num`-Instanz Gesetze erfüllen. Zu
 diesen gehört unter anderem, dass `fromInteger 0` das neutrale Element bzgl. der

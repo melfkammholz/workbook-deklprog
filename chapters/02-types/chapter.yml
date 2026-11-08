@@ -57,6 +57,7 @@ items:
 
   - page: member-continuations
     title: Das Wortproblem mit continuations
+    extra: true
 
   - checklist: selbstevaluation-datentypen
     text: selfeval.typ

@@ -1,4 +1,4 @@
-Diese Seite geht über die Vorlesung hinaus und ist für dich, falls dich das Thema besonders interessiert. Sie gehört zu #xref("queue").
+Diese Seite gehört zu #xref("queue").
 
 Wenn sogar `length xs >= length ys` für eine queue `Q xs ys` gewährleistet wird
 und die Liste `ys` schrittweise an `xs` angehängt wird, dann hilft uns lazy

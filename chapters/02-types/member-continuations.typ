@@ -1,4 +1,4 @@
-Diese Seite geht über die Vorlesung hinaus und ist für dich, falls dich das Thema besonders interessiert. Sie gehört zu #xref("brzozowski").
+Diese Seite gehört zu #xref("brzozowski").
 
 Mithilfe des
 #link("https://en.wikipedia.org/wiki/Continuation-passing_style")[continuation-passing style]

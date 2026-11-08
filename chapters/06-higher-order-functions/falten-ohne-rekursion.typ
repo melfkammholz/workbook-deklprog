@@ -258,6 +258,4 @@ Für jeden Typ ohne Rekursion reichen diese vier Schritte. Wähle ein Beispiel, 
 *Zur Kontrolle:* Übergibst du die Konstruktoren selbst, muss die Identität herauskommen, also
 `foldMaybe Nothing Just x == x`. Bei rekursiven Typen kommt ein Schritt dazu, darum geht es in der nächsten Lektion.
 
-Jetzt bist du dran: Schreib die Faltungen selbst.
-
 #practice("fold-maybe-either")

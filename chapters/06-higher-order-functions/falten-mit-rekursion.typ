@@ -169,7 +169,7 @@ und `fcons` nur, um den Zusammenhang zu zeigen. Im Alltag schreibst du beide dir
 Der folgende Baum hat Blätter und beschriftete Knoten mit beliebig vielen Kindern. Darum steckt der Typ selbst in einer
 Liste. Das ändert an den Schritten nichts: Auch dort wird `Tree a b` zum Ergebnistyp, und die Liste bleibt stehen.
 
-#fold-signature("data Tree a b = Empty | Leaf a | Node b [Tree a b]")
+#wide(fold-signature("data Tree a b = Empty | Leaf a | Node b [Tree a b]"))
 
 = Woher kommt die Liste `[r]`?
 
@@ -328,7 +328,5 @@ alles andere bleibt gleich.
 
 *Zur Kontrolle:* Auch hier muss die Identität herauskommen, wenn du die Konstruktoren selbst übergibst:
 `foldTree Empty Leaf Node t == t`.
-
-Jetzt bist du dran: Schreib die Faltung für genau diesen Baum selbst.
 
 #practice("fold-labeled-tree")

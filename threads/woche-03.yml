@@ -5,6 +5,6 @@ steps:
   - falten-ohne-rekursion
   - fold-maybe-either
   - falten-mit-rekursion
+  - fold-maximum
   - fold-labeled-tree
   - akkumulatoren-foldl
-  - fold-maximum

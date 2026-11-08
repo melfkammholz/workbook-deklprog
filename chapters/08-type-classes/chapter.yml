@@ -170,9 +170,11 @@ items:
 
   - page: autodiff-any-derivative
     title: Ableitungen beliebiger Ordnung
+    extra: true
 
   - page: tropical-num-laws
     title: "`Num`-Gesetze und Halbringe"
+    extra: true
 
   - checklist: selbstevaluation-typklassen-instanzen
     text: selfeval.typ

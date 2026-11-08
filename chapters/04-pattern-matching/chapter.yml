@@ -59,6 +59,7 @@ items:
 
   - page: queue-guarantees
     title: Queues mit besseren Garantien
+    extra: true
 
   - checklist: selbstevaluation-pattern-matching
     text: selfeval.typ

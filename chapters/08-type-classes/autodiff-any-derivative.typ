@@ -1,5 +1,4 @@
-Diese Seite geht weit über die Vorlesung hinaus und ist für dich, falls dich das
-Thema sehr interessiert. Für #xref("automatic-differentiation") brauchst du sie nicht.
+Für #xref("automatic-differentiation") brauchst du diese Seite nicht.
 
 Die Funktionen `d1` und `d2` ver- und entschachteln `D`-Werte unterschiedlich
 tief, um die jeweilige Ableitung zu berechnen. Ein allgemeines `d` für beliebige

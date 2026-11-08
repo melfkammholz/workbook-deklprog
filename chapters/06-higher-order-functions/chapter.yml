@@ -209,6 +209,7 @@ items:
 
   - page: foldable-java
     title: Foldable in Java
+    extra: true
 
   - checklist: selbstevaluation-funktionen-hoeherer-ordnung
     text: selfeval.typ

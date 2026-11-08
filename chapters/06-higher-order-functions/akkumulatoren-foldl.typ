@@ -114,6 +114,4 @@ bleibt erhalten.
     Auswertung.],
 )
 
-Jetzt bist du dran: Probier `foldl` und `foldr` an zwei Aufgaben aus.
-
 #practice("fold-maximum", "foldl-vs-foldr")

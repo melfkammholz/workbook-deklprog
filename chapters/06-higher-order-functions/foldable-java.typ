@@ -1,5 +1,3 @@
-Diese Seite geht über die Vorlesung hinaus und ist für dich, falls dich das Thema besonders interessiert.
-
 In #xref("foldable-python") haben wir gesehen, wie Haskell-Konzepte in Python
 verwendet werden können. In Java haben diese Konzepte über die letzten Jahre auch
 einen Platz gefunden. Hier ist das Programm in Java (ohne gecurryte Funktionen und
