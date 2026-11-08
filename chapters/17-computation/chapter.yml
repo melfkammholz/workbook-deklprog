@@ -125,6 +125,15 @@ items:
     level: 2
     after: [sld-tree-simple]
     similar: [cut-sld]
+  - id: sld-tree-member
+    title: "SLD-Baum für `member`"
+    level: 2
+    after: [sld-tree-recursive]
+    similar: [sld-tree-recursive]
+    code:
+      language: sld
+      file: code/member.sld
+      program: code/member.pl
   - page: sld-exams
     title: Weitere SLD-Aufgaben
   - id: append-unifier
