@@ -26,7 +26,7 @@ items:
     code:
       language: prolog
   - id: cut-member
-    title: member mit Cut
+    title: "`member` mit Cut"
 
   - checklist: selbstevaluation-cut
     text: selfeval.typ

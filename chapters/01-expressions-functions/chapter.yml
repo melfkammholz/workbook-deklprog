@@ -55,7 +55,7 @@ items:
       file: code/BinaryExponentiation.hs
       check: code/BinaryExponentiationCheck.hs
   - id: let-evaluation
-    title: Laziness in let
+    title: "Laziness in `let`"
   - id: if-typecheck
     title: Typen in bedingten Ausdrücken
   - id: no-result

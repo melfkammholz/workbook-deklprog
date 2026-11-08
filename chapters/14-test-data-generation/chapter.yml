@@ -5,7 +5,7 @@ defaults:
   scratch: haskell
 items:
   - id: such-that
-    title: suchThat
+    title: "`suchThat`"
     level: 2
     code:
       language: haskell
@@ -17,7 +17,7 @@ items:
       language: haskell
   - id: quickcheck-simple
     extra: true
-    title: Funktionen mit variabler Argumentanzahl am Beispiel quickCheck
+    title: "Funktionen mit variabler Argumentanzahl am Beispiel `quickCheck`"
     kind: challenge
     level: 3
     long: true

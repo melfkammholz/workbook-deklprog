@@ -16,7 +16,7 @@ items:
   - id: functions-as-relations
     title: Funktionen als Relationen
   - id: bool-functions
-    title: Funktionen nach Bool
+    title: "Funktionen nach `Bool`"
   - id: prolog-logic-syntax
     title: Prolog und Aussagenlogik
   - id: fol-subset
@@ -41,11 +41,11 @@ items:
   - id: sublist-results
     title: Alle Teillisten
   - id: zip-prolog
-    title: zip und unzip
+    title: "`zip` und `unzip`"
     code:
       language: prolog
   - id: append-predicates
-    title: Listenprädikate mit append
+    title: "Listenprädikate mit `append`"
     level: 2
     long: true
     code:
@@ -80,7 +80,7 @@ items:
   - id: chord-terms
     title: Atome, Fakten, Regeln und Variablen
   - id: semitone-append
-    title: Halbtonschritte mit append
+    title: "Halbtonschritte mit `append`"
     level: 2
     after: [chord-terms]
     code:

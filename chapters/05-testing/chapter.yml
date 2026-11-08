@@ -14,7 +14,7 @@ items:
     title: Vorbedingungen in QuickCheck
     start-here: true
   - id: quickcheck-implication
-    title: Nachteile von (==>)
+    title: "Nachteile von `(==>)`"
     level: 2
     after: [quickcheck-preconditions]
   - id: testing-limits

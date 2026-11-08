@@ -8,7 +8,3 @@ parts:
   - title: Logische Programmierung
     summary: Programmieren in Prolog.
     chapters: [15-prolog-basics, 16-programming-techniques, 17-computation, 18-negation, 19-cut, 20-arithmetic, 21-higher-order-predicates, 22-encapsulation, 23-logic-puzzles]
-  - title: Präsenzaufgaben
-    summary: Die Aufgaben aus den Übungen, nach Wochen.
-    numbered: false
-    chapters: [woche-03]

@@ -12,7 +12,7 @@ items:
   - id: prelude-constructors
     title: Typen aus der Prelude
   - id: int-list-length
-    title: Die Länge einer IntList
+    title: "Die Länge einer `IntList`"
     start-here: true
     code:
       language: haskell

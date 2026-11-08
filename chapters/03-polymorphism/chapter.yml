@@ -16,7 +16,7 @@ items:
   - id: type-constructor-kinds
     title: Typkonstruktoren und ihre Kinds
   - id: either-kinds
-    title: Die Kinds von Either
+    title: "Die Kinds von `Either`"
   - id: type-from-constructor
     title: Vom Typkonstruktor zum Typ
   - id: type-vs-constructors
@@ -24,7 +24,7 @@ items:
   - id: pair-types
     title: Zwei Definitionen von Pair
   - id: application-syntax
-    title: "f 1 2 oder f(1, 2)?"
+    title: "`f 1 2` oder `f(1, 2)`?"
 
   - section: Polymorphe Listen
 
@@ -39,7 +39,7 @@ items:
     level: 2
     after: [heterogeneous-list]
   - id: show-type
-    title: Der Typ von show
+    title: "Der Typ von `show`"
     level: 2
 
   - section: Arbeiten mit Listen

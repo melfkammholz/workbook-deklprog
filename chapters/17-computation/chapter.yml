@@ -128,7 +128,7 @@ items:
   - page: sld-exams
     title: Weitere SLD-Aufgaben
   - id: append-unifier
-    title: Ein Schritt von append
+    title: "Ein Schritt von `append`"
   - id: upto-graph
     title: Lösungen schneller berechnen
     level: 2

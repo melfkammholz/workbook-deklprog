@@ -18,32 +18,4 @@ None None
 ```
 sein.
 
-#sample[
-  ```python
-  class Array:
-    def __init__(self, size, data):
-      self.size = size
-      self.data = data
-
-    @staticmethod
-    def fromList(size, pairs):
-      data = [None] * size
-      for index, value in pairs:
-        data[index] = value
-      return Array(size, data)
-
-    def __getitem__(self, index):
-      if not 0 <= index < self.size:
-        raise IndexError("index out of bounds")
-      return self.data[index]
-
-    def __len__(self):
-      return self.size
-
-    def update(self, values):
-      data = self.data.copy()
-      for index, value in values:
-        data[index] = value
-      return Array(self.size, data)
-  ```
-]
+Das Beispielprogramm steht in deiner Datei als Funktion `main`. Im Interpreter rufst du es mit `main()` auf.

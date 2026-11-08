@@ -9,7 +9,7 @@ items:
   - id: lc-parts
     title: Die Teile einer list comprehension
   - id: lc-basics
-    title: map, filter und concatMap
+    title: "`map`, `filter` und `concatMap`"
     code:
       language: haskell
   - id: lc-translate

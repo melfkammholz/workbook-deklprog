@@ -5,11 +5,11 @@ defaults:
   scratch: prolog
 items:
   - id: call-explain
-    title: Das Meta-Prädikat call
+    title: "Das Meta-Prädikat `call`"
   - id: call-forms
     title: Welche Anfragen sind gleich?
   - id: map-filter-foldr-prolog
-    title: map, filter und foldr
+    title: "`map`, `filter` und `foldr`"
     level: 2
     start-here: true
     code:
@@ -17,7 +17,7 @@ items:
       file: code/MapFilterFoldr.pl
       check: code/MapFilterFoldrCheck.pl
   - id: foldr-plus
-    title: Die Summe mit foldr
+    title: "Die Summe mit `foldr`"
     after: [map-filter-foldr-prolog]
     code:
       language: prolog

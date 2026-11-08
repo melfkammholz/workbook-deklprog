@@ -17,12 +17,12 @@ items:
   - id: lazy-sharing
     title: Mehrfache Berechnungen vermeiden
   - id: lazy-let
-    title: Division in einem let
+    title: "Division in einem `let`"
   - id: lazy-length-loop
     title: Die Länge von loops
     start-here: true
   - id: foldl-infinite
-    title: foldl auf unendlichen Listen
+    title: "`foldl` auf unendlichen Listen"
   - id: scans
     title: scanl und scanr
     code:

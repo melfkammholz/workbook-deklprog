@@ -9,11 +9,11 @@ items:
   - id: referential-transparency
     title: Referenzielle Transparenz
   - id: io-type
-    title: Der Typ IO a
+    title: "Der Typ `IO a`"
   - id: io-combine
-    title: IO-Aktionen kombinieren
+    title: "`IO`-Aktionen kombinieren"
   - id: io-sequencing
-    title: Die Reihenfolge von IO-Aktionen
+    title: "Die Reihenfolge von `IO`-Aktionen"
     level: 3
     tags: [level-up]
 

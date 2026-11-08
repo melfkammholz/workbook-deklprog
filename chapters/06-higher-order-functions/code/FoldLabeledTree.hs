@@ -1,4 +1,4 @@
-module FoldTree where
+module FoldLabeledTree where
 
 data Tree a b = Empty
               | Leaf a

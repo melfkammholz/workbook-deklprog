@@ -27,7 +27,7 @@ items:
   - id: adt-preconditions
     title: Bedingungen in Gesetzen
   - id: array-reverse-law
-    title: Ein Gesetz für reverse
+    title: "Ein Gesetz für `reverse`"
     level: 2
   - id: array-update-law
     title: Ein Gesetz für update

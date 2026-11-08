@@ -11,7 +11,7 @@ items:
   - id: adhoc-vs-parametric
     title: Zwei Arten von Polymorphismus
   - id: show-rescued
-    title: Die Rettung von show
+    title: "Die Rettung von `show`"
     after: [show-type]
   - id: typeclasses-known
     title: Welche Typklassen kennst du?
@@ -23,7 +23,7 @@ items:
   - id: numeric-literals
     title: Zahlenliterale
   - id: case-vs-if
-    title: case oder if?
+    title: "`case` oder `if`?"
   - id: popcnt-bits
     title: Das Hamming-Gewicht
     after: [imperative-variables]
@@ -39,19 +39,19 @@ items:
   - section: Instanzen
 
   - id: eq-laws
-    title: Die Typklasse Eq
+    title: "Die Typklasse `Eq`"
   - id: eq-instance
-    title: Eine Eq-Instanz
+    title: "Eine `Eq`-Instanz"
     level: 2
     long: true
     start-here: true
     code:
       language: haskell
   - id: ord-laws
-    title: Die Typklasse Ord
+    title: "Die Typklasse `Ord`"
     level: 2
   - id: ord-instance
-    title: Eine Ord-Instanz
+    title: "Eine `Ord`-Instanz"
     level: 2
     long: true
     start-here: true
@@ -59,18 +59,22 @@ items:
     code:
       language: haskell
   - id: ord-defaults
-    title: Standarddefinitionen in Ord
+    title: "Standarddefinitionen in `Ord`"
     level: 3
     long: true
   - id: show-tree-runtime
-    title: Die Laufzeit von show
+    title: "Die Laufzeit von `show`"
     level: 2
   - id: if-then-else-class
-    title: ifThenElse für alle Typen
+    title: "`ifThenElse` für alle Typen"
     level: 2
     long: true
     code:
       language: haskell
+  - lesson: assoziativitaet-monoide
+    title: Assoziativität und Monoide
+    extra: true
+    tags: [typklassen]
   - id: semigroup-monoid
     title: Halbgruppen und Monoide
     level: 2
@@ -168,7 +172,7 @@ items:
     title: Ableitungen beliebiger Ordnung
 
   - page: tropical-num-laws
-    title: Num-Gesetze und Halbringe
+    title: "`Num`-Gesetze und Halbringe"
 
   - checklist: selbstevaluation-typklassen-instanzen
     text: selfeval.typ

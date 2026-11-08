@@ -11,17 +11,17 @@ items:
   - id: tcc-instances
     title: Instanzen einer Typkonstruktorklasse
   - id: functor-laws
-    title: Die Functor-Gesetze
+    title: "Die `Functor`-Gesetze"
     start-here: true
   - id: functor-kind
     title: Der Kind von f
   - id: functor-instances
-    title: Functor-Instanzen
+    title: "`Functor`-Instanzen"
     start-here: true
   - id: invalid-functors
-    title: Ungültige Functor-Instanzen
+    title: "Ungültige `Functor`-Instanzen"
   - id: functor-law-proofs
-    title: Die Functor-Gesetze zeigen
+    title: "Die `Functor`-Gesetze zeigen"
   - id: bifunctor
     title: Bifunktoren
     level: 2
@@ -31,14 +31,14 @@ items:
   - section: Applicatives
 
   - id: applicative-laws
-    title: Die Applicative-Gesetze
+    title: "Die `Applicative`-Gesetze"
   - id: applicative-instances
-    title: Applicative-Instanzen
+    title: "`Applicative`-Instanzen"
   - id: applicative-fmap
-    title: "fmap und (<*>)"
+    title: "`fmap` und `(<*>)`"
     level: 2
   - id: zip-list
-    title: ZipList
+    title: "`ZipList`"
     kind: challenge
     level: 2
     long: true
@@ -49,21 +49,21 @@ items:
   - section: Monaden
 
   - id: monad-laws
-    title: Die Monad-Gesetze
+    title: "Die `Monad`-Gesetze"
     start-here: true
   - id: monad-instances
-    title: Monad-Instanzen
+    title: "`Monad`-Instanzen"
     start-here: true
   - id: general-type-join
     title: "Der Typ von mmx >>= id"
   - id: monad-effects
     title: Welche Monade für welchen Effekt?
   - id: monad-sequencing
-    title: Sequenzierung in Maybe und Listen
+    title: "Sequenzierung in `Maybe` und Listen"
   - id: bind-vs-fmap
-    title: "(>>=) und fmap"
+    title: "`(>>=)` und `fmap`"
   - id: monad-from-bind
-    title: "Alles aus (>>=)"
+    title: "Alles aus `(>>=)`"
     level: 2
     code:
       language: haskell
@@ -81,7 +81,7 @@ items:
     code:
       language: haskell
   - id: non-empty-instances
-    title: Instanzen für NonEmpty
+    title: "Instanzen für `NonEmpty`"
     level: 2
     code:
       language: haskell
@@ -90,7 +90,7 @@ items:
     level: 2
     start-here: true
   - id: list-writer
-    title: Die ListWriter-Monade
+    title: "Die `ListWriter`-Monade"
     level: 2
     tags: [level-up]
     after: [reader]
@@ -119,7 +119,7 @@ items:
     code:
       language: haskell
   - id: safe-div-applicative
-    title: "Sichere Division ohne (>>=)"
+    title: "Sichere Division ohne `(>>=)`"
     after: [guard-monadzero]
     code:
       language: haskell
@@ -140,16 +140,16 @@ items:
   - section: do-Notation
 
   - id: do-to-bind
-    title: "Von do zu (>>=)"
+    title: "Von `do` zu `(>>=)`"
     start-here: true
   - id: bind-to-do
-    title: "Von (>>=) zu do"
+    title: "Von `(>>=)` zu `do`"
   - id: do-return
-    title: Was macht return?
+    title: "Was macht `return`?"
   - id: do-if-error
-    title: Ein Fehler in einem do
+    title: "Ein Fehler in einem `do`"
   - id: do-patterns
-    title: Muster in der do-Notation
+    title: "Muster in der `do`-Notation"
     level: 2
     long: true
     after: [eval-errors]
@@ -164,7 +164,7 @@ items:
       file: code/AllTrees.hs
       check: code/AllTreesCheck.hs
   - id: fold-deep
-    title: Falten mit fmap
+    title: "Falten mit `fmap`"
     level: 2
   - id: fold-t1-t2
     title: Faltungen mit gleicher Signatur

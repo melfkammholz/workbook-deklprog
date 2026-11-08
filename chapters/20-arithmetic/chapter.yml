@@ -7,7 +7,7 @@ items:
   - section: Rechnen mit is
 
   - id: is-purpose
-    title: Wofür is/2?
+    title: "Wofür `is/2`?"
   - id: is-valid
     title: Welche Anfragen sind valide?
     start-here: true

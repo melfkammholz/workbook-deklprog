@@ -1,6 +1,6 @@
 {-# LANGUAGE ScopedTypeVariables #-}
 import Workbook.Check
-import FoldTree
+import FoldLabeledTree
 
 t :: Tree Int String
 t = Node "x" [Leaf 3, Node "y" [Leaf 4, Empty], Leaf 5]

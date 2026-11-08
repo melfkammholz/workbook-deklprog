@@ -14,7 +14,7 @@ items:
   - id: arrow-types
     title: Klammern in Funktionstypen
   - id: associativity-concepts
-    title: Assoziativität von Applikation und (->)
+    title: "Assoziativität von Applikation und `(->)`"
   - id: partial-application
     title: Partielle Applikation
   - id: currying
@@ -23,7 +23,7 @@ items:
   - id: what-are-sections
     title: Was sind Sections?
   - id: sectioning-subtract
-    title: (- 1) und subtract
+    title: "`(- 1)` und `subtract`"
     after: [what-are-sections]
   - id: eta-reduction
     title: Eta-Reduktion
@@ -37,7 +37,7 @@ items:
     code:
       language: haskell
   - id: zip-with
-    title: zipWith
+    title: "`zipWith`"
     level: 2
     code:
       file: code/ZipWith.hs
@@ -49,32 +49,60 @@ items:
 
   - section: Faltung
 
+  - lesson: falten-ohne-rekursion
+    title: Falten ohne Rekursion
+  - id: fold-maybe-either
+    start-here: true
+    title: "`foldMaybe` und `foldEither`"
+    code:
+      file: code/FoldMaybeEither.hs
+      check: code/FoldMaybeEitherCheck.hs
+  - lesson: falten-mit-rekursion
+    title: Falten mit Rekursion
+    tags: [rekursion]
+  - id: fold-labeled-tree
+    start-here: 🦉
+    title: "`foldTree`"
+    level: 2
+    after: [fold-maybe-either]
+    similar: [fold-signatures]
+    code:
+      file: code/FoldLabeledTree.hs
+      check: code/FoldLabeledTreeCheck.hs
   - id: natural-fold
     title: Die natürliche Faltung auf Listen
+  - lesson: akkumulatoren-foldl
+    title: "Akkumulatoren und `foldl`"
   - id: foldl-vs-foldr
-    title: foldl und foldr
+    title: "`foldl` und `foldr`"
+  - id: fold-maximum
+    start-here: true
+    title: "`maximum` mit einer Faltung"
+    code:
+      file: code/Maximum.hs
+      check: code/MaximumCheck.hs
   - id: fold-identity
     title: Die Identität als Faltung
   - id: partial-identities
     title: Partiell applizierte Funktionen
     level: 2
   - id: map-filter-foldr
-    title: map und filter mit foldr
+    title: "`map` und `filter` mit `foldr`"
     start-here: true
   - id: map-foldr-simplify
     title: Einen Lambda-Ausdruck vereinfachen
     level: 2
     after: [map-filter-foldr]
   - id: foldr-pattern
-    title: Das Muster hinter foldr
+    title: "Das Muster hinter `foldr`"
     start-here: true
     level: 2
   - id: foldl-reverse
-    title: foldl mit (flip (:))
+    title: "`foldl` mit `(flip (:))`"
     level: 2
     after: [fold-identity]
   - id: concat-map-fold
-    title: Eine bekannte Funktion mit foldr
+    title: "Eine bekannte Funktion mit `foldr`"
   - id: fold-signatures
     title: Faltungsfunktionen herleiten
   - id: insert-many
@@ -89,7 +117,7 @@ items:
       file: code/FoldTree.hs
       check: code/FoldTreeCheck.hs
   - id: leaf-tree-foldr
-    title: foldr auf blattbeschrifteten Bäumen
+    title: "`foldr` auf blattbeschrifteten Bäumen"
     level: 3
     tags: [level-up]
     code:
@@ -99,7 +127,7 @@ items:
 
   - id: unfoldr
     extra: true
-    title: unfoldr
+    title: "`unfoldr`"
     level: 3
     long: true
     tags: [deep-dive]
@@ -159,6 +187,7 @@ items:
     title: Arrays ohne Mutation
     code:
       language: python
+      file: code/ArrayOhneMutation.py
 
   - page: python-repeat
     title: Selbsttests in Python

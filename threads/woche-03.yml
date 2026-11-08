@@ -1,0 +1,10 @@
+title: "Woche 3: Faltung"
+kind: session
+description: Die Präsenzaufgaben der 3. Übung, mit den Lektionen, die sie vorbereiten. Sie bauen auf Funktionen höherer Ordnung und algebraischen Datentypen auf.
+steps:
+  - falten-ohne-rekursion
+  - fold-maybe-either
+  - falten-mit-rekursion
+  - fold-labeled-tree
+  - akkumulatoren-foldl
+  - fold-maximum
