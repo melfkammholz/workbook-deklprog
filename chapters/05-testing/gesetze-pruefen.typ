@@ -1,19 +1,24 @@
-// TODO let students define them in the editor first with explicit types
-// this eliminates the forward reference and the need to annotate.
-
-Welche dieser Gesetze gelten? Überlege dir zuerst eine Vermutung und prüfe sie dann mit `quickCheck` im Interpreter.
-Typangaben wie `(a :: Int)` sind wichtig, siehe die nächste Lektion.
+Welche dieser Gesetze gelten? Überlege dir zuerst eine Vermutung und prüfe sie dann mit QuickCheck.
 
 + Addition auf `Int` ist assoziativ: `(a + b) + c == a + (b + c)`
 + Subtraktion auf `Int` ist kommutativ: `a - b == b - a`
 + Subtraktion auf `Int` ist assoziativ: `(a - b) - c == a - (b - c)`
 + Addition auf `Double` ist assoziativ: `(a + b) + c == a + (b + c)`
-+ `(xs ++ ys) ++ zs == xs ++ (ys ++ zs)` für Listen
-+ `reverse (xs ++ ys) == reverse xs ++ reverse ys`
-+ `max` ist assoziativ: `max (max a b) c == max a (max b c)`
++ Die Konkatenation von Listen (`[Int]`) ist assoziativ: `(xs ++ ys) ++ zs == xs ++ (ys ++ zs)`
++ `reverse (xs ++ ys) == reverse xs ++ reverse ys` für Listen vom Typ `[Int]`
++ `max` auf `Int` ist assoziativ: `max (max a b) c == max a (max b c)`
+
+Schreibe jedes Gesetz im Editor als Eigenschaft mit expliziter Typsignatur auf, und prüfe sie im Interpreter mit `quickCheck`:
 
 ```haskell
-ghci> quickCheck (\a b c -> (a + b) + c == (a :: Int) + (b + c))
+import Test.QuickCheck
+
+prop_plusAssoc :: Int -> Int -> Int -> Bool
+prop_plusAssoc a b c = (a + b) + c == a + (b + c)
+```
+
+```haskell
+ghci> quickCheck prop_plusAssoc
 ```
 
 Wie gehst du mit den falschen Gesetzen um? Ändere sie so ab, dass sie gelten, und prüfe die neue Fassung.

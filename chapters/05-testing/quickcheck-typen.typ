@@ -2,11 +2,10 @@
 konkreter Eigenschaften. In dieser Lektion schauen uns, wo potentiell Fallen
 in der Anwendung der Funktion lauern.
 
-// TODO add reference to quickcheck-simple
 #remark[
   An dieser Stelle könnte man sich fragen, welchen Typ ```hs quickCheck``` hat?
   Mit unserem bisherigen Kenntnisstand können wir diese Frage allerdings nicht
-  konkret beantworten.
+  konkret beantworten (siehe später #xref("quickcheck-simple")).
 ]
 
 = Bool oder Property
@@ -28,12 +27,17 @@ prop_divMod a b = b /= 0 ==> (a `div` b) * b + a `mod` b == a
 
 Eingaben, die die Vorbedingung nicht erfüllen, verwirft QuickCheck. Mehr dazu in #xref("quickcheck-preconditions") und #xref("quickcheck-implication").
 
-// TODO do i have an environment for a simple question question?
-#quiz[
-  Können wir eine alternative Definition von 
-  ```hs (==>) :: Bool -> Bool -> Bool``` angeben, sodass QuickCheck weiterhin
-  feststellen kann, ob die Vorbedingung nicht erfüllt war? Wie lautet sie?
-]
+#steps(
+  step(label: "Frage")[
+    Können wir eine alternative Definition von ```hs (==>) :: Bool -> Bool -> Bool``` angeben, sodass QuickCheck weiterhin
+    feststellen kann, ob die Vorbedingung nicht erfüllt war? Wie lautet sie? Überlege kurz, bevor du weitergehst.
+  ],
+  step(label: "Antwort")[
+    Nein. Ein `Bool` hat nur die Werte `True` und `False`. Ist die Vorbedingung falsch, darf der Test weder bestehen noch
+    fehlschlagen, er muss _verworfen_ werden. Dafür bräuchten wir einen dritten Wert. Deshalb liefert `(==>)` einen
+    `Property` und kein `Bool`. Mit `Maybe Bool` ginge es zum Beispiel: `Nothing` steht für "verworfen".
+  ],
+)
 
 = Wenn die Typinferenz zum Verhängnis wird
 

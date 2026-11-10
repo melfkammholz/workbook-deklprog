@@ -20,17 +20,22 @@ Wir führen ein Programm mit ausgewählten Eingaben aus und vergleichen das
 erwarteten Ergebnis. Je mehr Eingaben wird testen, desto wahrscheinlicher wird
 es, dass wir einen Test aufdecken.
 
-Wichtig ist, was ein Test _nicht_ kann:
+Wichtig ist, was ein Test _nicht_ kann. Edsger Dijkstra hat es 1970 so formuliert:
 
-// TODO properly cite "Concern for Correctness as a Guiding Principle for Program Composition."
-// TODO put this as a quote here
-#check[
-  Tests können Fehler finden, aber nie ihre Abwesenheit beweisen. Edsger
-  Dijkstra hat das so gesagt: Testen zeigt die Anwesenheit von Fehlern, niemals
-  ihre Abwesenheit.
-]
+#remark(
+  quote(
+    block: true,
+    attribution: [
+      Edsger W. Dijkstra, #link("https://www.cs.utexas.edu/~EWD/transcriptions/EWD02xx/EWD288.html")[Concern for Correctness as a Guiding Principle for Program Composition] (EWD 288, Juli 1970)
+    ],
+    [
+      The first moral of this story is that program testing can be used very
+      efficiently to show the presence of bugs, but never to show their absence.
+    ]
+  )
+)
 
-// TODO the spacing between paragraphs and the #check is off-balance.
+Tests können also Fehler finden, aber nie ihre Abwesenheit beweisen.
 
 Aus softwaretechnischer Sicht dienen Tests ebenso der Dokumentation von Software
 und sie Unterstützen die Softwareevolution. Letzteres wird erreicht, indem die
@@ -43,16 +48,13 @@ Tests auch #emph[Regressionstests] genannt.
 Eine Funktion ```hs f :: Int -> Int -> Int``` hat bei 64-Bit-Zahlen 
 $2^64 dot 2^64 = 2^128$ mögliche Eingaben.
 
-// TODO i get the spirit of the questions as a fun questions to ask, but the
-// explanations to the answers suffer from inaccuracy since no testing speed
-// is given. Please fix this
 #quiz(
   [
     Angenommen, wir prüfen eine Milliarde Eingaben pro Sekunde. Wie lange dauert 
     es, alle Eingaben von `f` zu prüfen?
   ],
-  choice[Ein Sekunde][Selbst mit einer großzügigen Taktfrequenz eines Prozessor müssten wir mehr als $2^105$ Tests pro Takt durchführen. Das ist viel zu wenig Zeit.],
-  choice[Etwa ein Jahr][Ein Jahr hat rund $3 dot 10^7$ Sekunden. Das ergäbe nur etwa $3 dot 10^16$ Eingaben.],
+  choice[Eine Sekunde][In einer Sekunde schaffen wir $10^9 approx 2^30$ Tests. Wir bräuchten aber $2^128$.],
+  choice[Etwa ein Jahr][Ein Jahr hat rund $3 dot 10^7$ Sekunden, das ergibt etwa $3 dot 10^16$ Tests. Wir bräuchten aber $2^128 approx 3 dot 10^38$.],
   choice(correct: true)[Länger als das Alter des Universums][Genau: $2^128 approx 3 dot 10^38$ Eingaben, geteilt durch $10^9$ pro Sekunde sind etwa $3 dot 10^29$ Sekunden. Das Universum ist erst rund $4 dot 10^17$ Sekunden alt.],
 )
 
