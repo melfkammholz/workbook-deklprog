@@ -4,6 +4,52 @@ intro: intro.typ
 defaults:
   scratch: haskell
 items:
+  - section: Eigenschaften mit QuickCheck testen
+
+  - lesson: testen-warum
+    title: Warum testen?
+  - lesson: quickcheck-eigenschaften
+    title: Eigenschaften mit QuickCheck prüfen
+  - id: gesetze-pruefen
+    title: Gelten diese Gesetze?
+    code:
+      language: haskell
+  - lesson: quickcheck-typen
+    title: "Fallstricke der `quickCheck`-Funktion"
+  - lesson: quickcheck-generatoren
+    title: Woher kommen die Testdaten?
+  - id: sumtree-eigenschaften
+    title: "Eigenschaften für `sumTree`"
+    start-here: true
+    level: 2
+    code:
+      file: code/SumTree.hs
+      check: code/SumTreeCheck.hs
+  - id: mirrortree-eigenschaften
+    title: "Eigenschaften für `mirrorTree`"
+    level: 2
+    after: [sumtree-eigenschaften]
+    code:
+      file: code/MirrorTree.hs
+      check: code/MirrorTreeCheck.hs
+  - id: tolist-eigenschaften
+    title: "Eigenschaften für `toList`"
+    level: 2
+    after: [sumtree-eigenschaften]
+    code:
+      file: code/ToList.hs
+      check: code/ToListCheck.hs
+  - id: build-balanciert
+    title: Balancierte Bäume bauen
+    start-here: true
+    level: 2
+    after: [sumtree-eigenschaften]
+    code:
+      file: code/Build.hs
+      check: code/BuildCheck.hs
+
+  - section: Mehr zu QuickCheck
+
   - id: quickcheck-search-tree
     title: Eigenschaften von Suchbäumen
     start-here: true

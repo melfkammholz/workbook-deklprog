@@ -1,0 +1,13 @@
+title: "Woche 4: Testen mit QuickCheck"
+kind: session
+description: Die Präsenzaufgabe der 4. Übung, mit den Lektionen, die sie vorbereiten. Du definierst Eigenschaften für Baumfunktionen, findest Fehler und korrigierst sie.
+steps:
+  - testen-warum
+  - quickcheck-eigenschaften
+  - gesetze-pruefen
+  - quickcheck-typen
+  - quickcheck-generatoren
+  - sumtree-eigenschaften
+  - mirrortree-eigenschaften
+  - tolist-eigenschaften
+  - build-balanciert
