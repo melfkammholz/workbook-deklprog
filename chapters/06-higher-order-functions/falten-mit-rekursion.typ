@@ -101,7 +101,6 @@ Wert aus, den du für `fcons` und `fnil` eingesetzt hast. Gerechnet wird erst da
 Eine Faltung ersetzt Konstruktoren. Was passiert, wenn du jeden Konstruktor durch sich selbst ersetzt? Probiere es an
 einem Wert aus.
 
-#wide[
 #tabs(
   label: "Datentyp",
   tab("[a]")[
@@ -116,7 +115,6 @@ einem Wert aus.
     )
   ],
 )
-]
 
 Der Baum bleibt unverändert. Darum sind `foldr (:) []` auf Listen und `foldTree Empty Leaf Node` auf Bäumen die
 Identität. Für jeden Datentyp gilt: Die Faltung, die jeden Konstruktor durch sich selbst ersetzt, ist die Identität.
@@ -169,7 +167,7 @@ und `fcons` nur, um den Zusammenhang zu zeigen. Im Alltag schreibst du beide dir
 Der folgende Baum hat Blätter und beschriftete Knoten mit beliebig vielen Kindern. Darum steckt der Typ selbst in einer
 Liste. Das ändert an den Schritten nichts: Auch dort wird `Tree a b` zum Ergebnistyp, und die Liste bleibt stehen.
 
-#wide(fold-signature("data Tree a b = Empty | Leaf a | Node b [Tree a b]"))
+#fold-signature("data Tree a b = Empty | Leaf a | Node b [Tree a b]")
 
 = Woher kommt die Liste `[r]`?
 

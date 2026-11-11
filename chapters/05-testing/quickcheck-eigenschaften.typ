@@ -79,6 +79,35 @@ prop_sortLength xs = length (sort xs) == length xs  -- es geht nichts verloren
 Wenn alle Eigenschaften bestehen, ist die Funktion nicht automatisch richtig.
 Jede Eigenschaft schließt nur einen Teil der falschen Implementierungen aus.
 
+= So arbeitet QuickCheck
+
+Zusammengefasst läuft ein Aufruf von `quickCheck` so ab:
+
+#figure(
+  flow(
+    flow-node("prop", "Eigenschaft", kind: "start"),
+    flow-node("gen", "Zufällige Eingabe erzeugen", at: (0, 1)),
+    flow-node("eval", "Eigenschaft auswerten", at: (0, 2)),
+    flow-node("ok", "True?", at: (0, 3), kind: "decision"),
+    flow-node("more", "Noch Tests übrig?", at: (1, 3), kind: "decision"),
+    flow-node("pass", "100 Tests bestanden", note: "OK, aber kein Beweis", at: (1, 4), kind: "good"),
+    flow-node("cex", "Gegenbeispiel gefunden", at: (0, 4)),
+    flow-node("shr", "Ein kleineres schlägt noch fehl?", at: (0, 5), kind: "decision"),
+    flow-node("fail", "Kleinstes Gegenbeispiel", at: (1, 5), kind: "bad"),
+    flow-edge("prop", "gen"),
+    flow-edge("gen", "eval"),
+    flow-edge("eval", "ok"),
+    flow-edge("ok", "more", label: "ja"),
+    flow-edge("more", "gen", label: "ja"),
+    flow-edge("more", "pass", label: "nein"),
+    flow-edge("ok", "cex", label: "nein"),
+    flow-edge("cex", "shr"),
+    flow-edge("shr", "shr", label: "ja"),
+    flow-edge("shr", "fail", label: "nein"),
+  ),
+  caption: [Eine Eigenschaft besteht nach 100 zufälligen Eingaben. Schlägt eine fehl, sucht QuickCheck ein kleineres Gegenbeispiel, das noch fehlschlägt.],
+)
+
 = Woher kommen Eigenschaften?
 
 Oft sind es einfache Muster:

@@ -20,7 +20,7 @@ Wir führen ein Programm mit ausgewählten Eingaben aus und vergleichen das
 erwarteten Ergebnis. Je mehr Eingaben wird testen, desto wahrscheinlicher wird
 es, dass wir einen Test aufdecken.
 
-Wichtig ist, was ein Test _nicht_ kann. Edsger Dijkstra hat es 1970 so formuliert:
+Wichtig ist, was ein Test _nicht_ kann. Edsger Dijkstra hat es 1970 so formuliert#note[Edsger W. Dijkstra. _Concern for Correctness as a Guiding Principle for Program Composition._ EWD 288, Juli 1970.]:
 
 #remark(
   quote(
