@@ -68,12 +68,12 @@ Testdatengenierung ergänzen, erhalten wir #emph[QuickCheck].
 #remark[
   In der Softwaretechnik nutzt man unter anderem Techniken wie
   #emph[boundary-value analysis], um Eingaben in Äquivalenzklassen zu finden,
-  die #emph[gerade noch] ein Verhalten äquivalantes Verhalten aufweisen.
+  die #emph[gerade noch] ein ähnliches Verhalten aufweisen.
   Betrachte z.B. $x > 0$ für alle $x in ZZ$. Hier sind die Äquivalenzklassen
   $ZZ_(<= 0)$ und $ZZ_(> 0)$, wenn wir die Funktion nach Ausgaben
   klassifizieren. Besondere Eingaben sind hier $0$ und $1$, da sie jeweils einen
   Randwert der Intervalle darstellen.
 
-  Genau solche Ideen wollen wir an dieser Stelle unterlassen. Wir lassen uns
+  Genau solche Überlegungen wollen wir an dieser Stelle unterlassen. Wir verlassen uns
   darauf, dass das Spezifizieren der Eigenschaften genügt.
 ]
