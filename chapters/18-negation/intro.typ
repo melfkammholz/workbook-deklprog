@@ -1,3 +1,1 @@
-#refs[
-  - Skript: Einführung in die Logikprogrammierung, Negation
-]
+- Skript: Einführung in die Logikprogrammierung, Negation

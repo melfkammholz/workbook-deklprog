@@ -1,3 +1,1 @@
-#refs[
-  - Skript: Funktionale Programmierung, Lazy Evaluation
-]
+- Skript: Funktionale Programmierung, Lazy Evaluation

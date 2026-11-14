@@ -1,3 +1,1 @@
-#refs[
-  - Skript: Logische Programmierung, Elementare Programmiertechniken
-]
+- Skript: Logische Programmierung, Elementare Programmiertechniken

@@ -1,3 +1,1 @@
-#refs[
-  - Skript: Funktionale Programmierung, Abstrakte Datentypen
-]
+- Skript: Funktionale Programmierung, Abstrakte Datentypen
