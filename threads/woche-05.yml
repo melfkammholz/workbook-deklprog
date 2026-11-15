@@ -1,0 +1,9 @@
+title: "Woche 5: Abstrakte Datentypen"
+kind: session
+description: Die Präsenzaufgabe der 5. Übung, mit den Lektionen, die sie vorbereiten. Du gibst einen abstrakten Datentyp für Listen mit seinen Gesetzen an.
+steps:
+  - adt-einfuehrung
+  - adt-bestandteile
+  - adt-gesetze
+  - adt-nutzen
+  - list-adt

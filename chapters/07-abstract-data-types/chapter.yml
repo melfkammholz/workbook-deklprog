@@ -6,16 +6,24 @@ defaults:
 items:
   - section: Grundlagen
 
+  - lesson: adt-einfuehrung
+    title: ADTs, Datenstrukturen und Schnittstellen
   - id: adt-what-is
     title: Was ist ein abstrakter Datentyp?
-  - id: adt-semantics
-    title: Die Semantik eines ADTs
+  - lesson: adt-bestandteile
+    title: Bestandteile eines ADTs
   - id: adt-constructors
     title: Konstruktoren im ADT
-  - id: adt-encapsulation
-    title: Datenkapselung in Haskell
+  - lesson: adt-gesetze
+    title: Gesetze
+  - id: adt-semantics
+    title: Die Semantik eines ADTs
   - id: adt-equality
     title: Gleichheit auf einem ADT
+  - lesson: adt-nutzen
+    title: Wozu ADTs?
+  - id: adt-encapsulation
+    title: Datenkapselung in Haskell
 
   - section: Gesetze
 
@@ -42,6 +50,10 @@ items:
     title: Pomodoro-Timer
     level: 2
     start-here: true
+  - id: list-adt
+    title: Ein ADT für Listen
+    level: 2
+    long: true
   - id: adt-collection
     title: Eine Sammlung von ADTs
     kind: challenge
