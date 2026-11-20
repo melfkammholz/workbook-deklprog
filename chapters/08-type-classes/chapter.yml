@@ -6,6 +6,9 @@ defaults:
 items:
   - section: Grundlagen
 
+  - lesson: typklassen-einstieg
+    title: Typklassen im Überblick
+
   - id: typeclass-what
     title: Was sind Typklassen?
   - id: adhoc-vs-parametric
@@ -16,6 +19,10 @@ items:
   - id: typeclasses-known
     title: Welche Typklassen kennst du?
     start-here: true
+  - lesson: class-instance-syntax
+    title: Klassen und Instanzen schreiben
+  - lesson: type-constraints
+    title: Kontexte in Instanzen
   - id: read-class
     title: Werte aus Strings parsen
   - id: hash-typeclass
@@ -62,6 +69,13 @@ items:
     title: "Standarddefinitionen in `Ord`"
     level: 3
     long: true
+  - id: tojson-class
+    title: "Konvertierung nach JSON"
+    level: 2
+    long: true
+    code:
+      file: code/ToJson.hs
+      check: code/ToJsonCheck.hs
   - id: show-tree-runtime
     title: "Die Laufzeit von `show`"
     level: 2

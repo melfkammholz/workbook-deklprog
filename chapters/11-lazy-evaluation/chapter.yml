@@ -8,6 +8,8 @@ items:
 
   - id: lazy-what
     title: Was ist Lazy Evaluation?
+  - lesson: eval-strategies
+    title: Auswertungsstrategien
   - id: lazy-trigger
     title: Wie Berechnungen angestoßen werden
   - id: lazy-stronger
@@ -27,6 +29,11 @@ items:
     title: scanl und scanr
     code:
       language: haskell
+
+  - lesson: tying-the-knot
+    title: Tying the Knot
+  - lesson: infinite-structures
+    title: Unendliche Strukturen
 
   - section: Zyklische Daten
 
@@ -94,6 +101,20 @@ items:
     code:
       file: code/AutomataTrees.hs
       check: code/AutomataTreesCheck.hs
+
+  - id: btree-folds
+    title: Baumdurchläufe mit Faltung
+    level: 2
+    code:
+      file: code/BtreeFolds.hs
+      check: code/BtreeFoldsCheck.hs
+  - id: replace-max-rec
+    title: Maximum ersetzen in einem Durchlauf
+    level: 3
+    after: [btree-folds]
+    code:
+      file: code/ReplaceMaxRec.hs
+      check: code/ReplaceMaxRecCheck.hs
 
   - section: Differenzieren
 

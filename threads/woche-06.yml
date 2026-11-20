@@ -1,0 +1,13 @@
+title: "Woche 6: Lazy Evaluation und Typklassen"
+kind: session
+description: Die Präsenzaufgaben der 6. Übung, mit den Lektionen, die sie vorbereiten. Zuerst Auswertungsstrategien und unendliche Strukturen, dann Typklassen.
+steps:
+  - eval-strategies
+  - tying-the-knot
+  - infinite-structures
+  - btree-folds
+  - replace-max-rec
+  - typklassen-einstieg
+  - class-instance-syntax
+  - type-constraints
+  - tojson-class
