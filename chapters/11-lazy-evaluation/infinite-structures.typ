@@ -46,9 +46,7 @@ jedes weitere Element aus zwei früheren. `take 10 fib` ergibt
 )
 
 Die Startwerte müssen also so viele sein, wie die Definition zurückgreift:
-`fib` greift zwei Elemente zurück, braucht also zwei Startwerte. Mit zwei
-anderen Startwerten, etwa `fib = 2 : 1 : zipWith (+) fib (tail fib)`, entstehen
-die Lucas-Zahlen.
+`fib` greift zwei Elemente zurück, braucht also zwei Startwerte.
 
 = Ein Akkumulator, der unendlich wächst
 

@@ -1,7 +1,7 @@
-Bevor wir Lazy Evaluation weiter ausnutzen, wiederholen wir, welche
-Auswertungsstrategien es gibt. Eine Strategie legt fest, welchen Redex (reduzierbaren
-Teilausdruck) wir als Nächstes auswerten, wenn es mehrere gibt. Das Ergebnis ist
-fast immer dasselbe, der Weg dahin nicht.
+Bevor wir Lazy Evaluation anwenden, wiederholen wir, welche
+Auswertungsstrategien es gibt. Eine solche Strategie legt fest, welchen Redex
+(reduzierbaren Teilausdruck) wir als Nächstes auswerten, wenn es mehrere gibt.
+Das Ergebnis ist fast immer dasselbe, der Weg dahin nicht.
 
 = Innermost, outermost und Sharing
 
@@ -175,14 +175,14 @@ verdoppelt:
     nicht ob.],
 )
 
-= Welche Strategie ist am besten?
+= Welche Strategie ist "am besten"?
 
-Outermost ist _normalisierend_: Hat ein Ausdruck eine Normalform, dann findet
-outermost sie. Andere Strategien, zum Beispiel innermost, können für einen
-solchen Ausdruck in eine Endlosschleife laufen oder einen Fehler werfen
-(`const 1 (1 `div` 0)`). Der Preis ist das Verdoppeln von Arbeit, und genau das
-behebt Sharing. Haskell nutzt deshalb *leftmost outermost mit Sharing*: Von
-mehreren äußersten Redexes wird der linke zuerst ausgewertet.
+Hat ein Ausdruck eine Normalform, dann findet outermost sie. Andere Strategien,
+zum Beispiel innermost, können für einen solchen Ausdruck in eine
+Endlosschleife laufen oder einen Fehler werfen (`const 1 (1 `div` 0)`). Der
+Preis ist das Verdoppeln von Arbeit, und genau das behebt Sharing. Haskell
+nutzt deshalb *leftmost outermost mit Sharing*: Von mehreren äußersten Redexes
+wird der linke zuerst ausgewertet.
 
 = Andere Sprachen
 
@@ -195,14 +195,14 @@ Fast alle Sprachen, die du kennst, rechnen innermost:
   [Haskell], [outermost mit Sharing], [`1`],
 )
 
-#quiz(
-  [In Python ruft `f(1, 1 / 0)` eine Funktion `f(x, y)` auf, die `y` nie benutzt.
-  Was passiert?],
-  choice(correct: true)[`ZeroDivisionError`][Genau: Python wertet beide Argumente
-    aus, bevor `f` läuft (innermost).],
-  choice[`f` gibt `1` zurück][Das wäre outermost, wie in Haskell. Python
-    rechnet `1 / 0` aber schon vor dem Aufruf aus.],
-)
+// #quiz(
+//   [In Python ruft `f(1, 1 / 0)` eine Funktion `f(x, y)` auf, die `y` nie benutzt.
+//   Was passiert?],
+//   choice(correct: true)[`ZeroDivisionError`][Genau: Python wertet beide Argumente
+//     aus, bevor `f` läuft (innermost).],
+//   choice[`f` gibt `1` zurück][Das wäre outermost, wie in Haskell. Python
+//     rechnet `1 / 0` aber schon vor dem Aufruf aus.],
+// )
 
 = Selbst auswerten
 

@@ -1,10 +1,15 @@
+_In dieser Lektion betrachten wir Beispiele, in denen wir Lazy Evaluation 
+gezielt einsetzen können, um Probleme zu lösen. Diese sind für den weiteren
+Verlauf der Vorlesung eher unwichtig, veranschaulichen allerdings sehr gut,
+wie Lazy Evaluation genutzt werden kann._
+
+= Dynamische Programmierung am Beispiel der LCS
+
 Bei dynamischer Programmierung merkt man sich Zwischenergebnisse in einer Tabelle.
 In Haskell kann diese Tabelle sich _selbst_ benutzen: Die Einträge werden mit
 Ausdrücken beschrieben, die auf andere Einträge derselben Tabelle zeigen, und Lazy
 Evaluation sorgt dafür, dass jeder Eintrag erst berechnet wird, wenn ihn jemand
 braucht. Dieses Muster heißt _Tying the Knot_.
-
-= Beispiel: längste gemeinsame Teilfolge
 
 Gesucht ist die Länge der längsten gemeinsamen Teilfolge (LCS) von zwei Listen
 `xs` und `ys`, etwa `"haskell"` und `"pascal"`. Mit $n = $ `length xs` und $m = $
@@ -21,15 +26,18 @@ Mit einer Tabelle, die aus ihren eigenen Einträgen besteht, jeweils nur einmal:
 
 ```haskell
 lcs :: Eq a => [a] -> [a] -> Int
-lcs xs ys = table !! 0 !! 0
+lcs xs ys = table `at` (0, 0)
   where
     n = length xs
     m = length ys
     table = [[go i j | j <- [0 .. m]] | i <- [0 .. n]]
     go i j
-      | i == n || j == m = 0
-      | xs !! i == ys !! j = 1 + table !! (i + 1) !! (j + 1)
-      | otherwise = max (table !! (i + 1) !! j) (table !! i !! (j + 1))
+      | i == n || j == m   = 0
+      | xs !! i == ys !! j = 1 + table `at` (i + 1, j + 1)
+      | otherwise          = max (table `at` (i + 1, j)) (table `at` (i, j + 1))
+
+at :: [[a]] -> (Int, Int) -> a
+at g (x, y) = g !! x !! y
 ```
 
 `table` kommt in seiner eigenen Definition vor. Das ist kein Problem, solange
